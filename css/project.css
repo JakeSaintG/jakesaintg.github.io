@@ -1,0 +1,57 @@
+.projects {
+    background: #fff;
+    border-radius: .2em;
+    border: solid 1px rgba(88, 183, 205, .2);
+    border-bottom: solid 2px rgba(88, 183, 205, .2);
+    clear: both;
+    padding-bottom: 38px;
+    margin: 5px 4px;
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+}
+
+.entry {
+    text-align: center;
+}
+
+.goto,
+.gh {
+    font-size: .78em;
+    border-radius: .3em;
+    padding: .4em 1.8em;
+    color: white;
+    margin: 0 15px;
+}
+
+.goto {
+    background-color: #102999;
+    float: left;
+    margin-right: .4em;
+}
+
+.gh {
+    background-color: rgba(211, 146, 27, .5);
+    float: right;
+    margin-left: .4em;
+
+}
+
+
+@media (min-width: 769px) { 
+    .projects {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+    
+    .box {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .goto,
+    .gh { 
+        margin: 1em;
+        display: inline-block;
+    }
+
+}
