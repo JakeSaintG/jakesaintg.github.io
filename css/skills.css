@@ -8,11 +8,11 @@ body {
 }
  
 .mobile-nav {
-	background: #69336e /* background of whole nav  */
+	background: #e4cd4f /* background of whole nav  */
 }
 
 .other-nav {
-	background: #69336e; /* background of other-nav  */
+	background: #f8e578; /* background of other-nav  */
 }
 
 .main-nav a {
@@ -21,17 +21,17 @@ body {
 }
 
 .other-nav a:hover {
-	background: #6c4f6e;
-	color: white;
+	background: #e4d582;
+	color: black;
 } /* changes what all links do on hover  */
 
 .copy {
-    color: white;
+    color: black;
 }
 
 .activelink {
-    background: #6c4f6e;
-    color: white;
+    background: #e4d582;
+    color: black;
     border-bottom: 3px solid white;
     padding-bottom: 7px;
 }
@@ -84,12 +84,12 @@ body {
 Style changes in media queries
 ==================================== */
     .other-nav {
-        background: #69336e;
+        background: #e4cd4f;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     a.activelink {
-        color: white;
+        color: black;
         border-left: 5px solid white;
         padding-left: 5px;
     }

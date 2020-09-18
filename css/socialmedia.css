@@ -8,20 +8,20 @@ body {
 }
  
 .mobile-nav {
-	background: #69336e /* background of whole nav  */
+	background: #1f1f1f /* background of whole nav  */
 }
 
 .other-nav {
-	background: #69336e; /* background of other-nav  */
+	background: #3b3b3b; /* background of other-nav  */
 }
 
 .main-nav a {
-	color: #06070c; /* text color for links in whole nav  */
+	color: #ffffff; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }
 
-.other-nav a:hover {
-	background: #6c4f6e;
+.main-nav a:hover {
+	background: #505050;
 	color: white;
 } /* changes what all links do on hover  */
 
@@ -30,7 +30,7 @@ body {
 }
 
 .activelink {
-    background: #6c4f6e;
+    background: #505050;
     color: white;
     border-bottom: 3px solid white;
     padding-bottom: 7px;
@@ -84,12 +84,12 @@ body {
 Style changes in media queries
 ==================================== */
     .other-nav {
-        background: #69336e;
+        background: #1f1f1f;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     a.activelink {
-        color: white;
+        border: none;
         border-left: 5px solid white;
         padding-left: 5px;
     }

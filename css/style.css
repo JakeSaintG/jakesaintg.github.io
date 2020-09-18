@@ -2,183 +2,235 @@
   Base Element Styles
 ==================================== */
 
+/* -------------------- General Style Changes -------------------- */
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
 	color: #3a3a3a;
-}
-
-p {
-	font-size: .95em;
-}
-
-h2,
-h3,
-a {
-	color: #093a58;
-}
-
-h2,
-h3 {
-	margin-top: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-	border-radius: 50%;
-	box-shadow: 0 1px 14px rgba(0,0,0, .40);
-}
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
+/* -------------------- Navigation -------------------- */
 
-.name {
-	font-size: 1.25em;
-	margin: 0;
-}
+.main-nav,
+.mobile-nav,
+.other-nav,
+.content {
+	display: flex;
+} 
+/* The majority of this page is done in flexbox */
 
 .main-nav {
-	margin-top: 5px;
-}
-
-.name a,
-.main-nav a {
-	text-align: center;
-	display: block;
-	padding: 10px 15px;
-}
-
-.main-nav a {
-	font-size: .95em;
-	color: #102999;
-	text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	color: #d3921b;
-}
-
-/* ---- Layout Containers ---- */
-
-.main-header {
-padding-top: 8px;
-padding-bottom: 8px;
-}
-
-.banner,
-.main-footer {
-	text-align: center;
-}
-
-.banner {
-	color: #fff;
-	background: #d3921b;
-	padding: 30px 0;
-	margin-bottom: 60px;
 	box-shadow: 0 1px 14px rgba(0,0,0, .40);
+	flex-direction: column;
 }
-/* .col {
-	padding-right: 1em;
-	padding-left: 1em;
-} */
+/* The entire navigation box */
 
-.main-footer {
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
+.mobile-nav {
+	align-items: center;
+	box-shadow: 0 1px 14px rgba(0,0,0, .40);
+	z-index: 10;
+}
+/* The focused navigation in mobile layouts */
+
+.m-nav {
+	padding: 10px 10px;
 }
 
-/* ---- Page Elements ---- */
+.m-nav:first-child {
+	padding-right: 0;
+}
+
+.m-nav:last-child {
+	margin-left: auto;
+}
+/* Moves and controlles the icon for expanding the other-navi section */
 
 .logo {
-	width: 190px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
+/* The styling for my face */
+
+.name {
+	display: block;
+	font-size: 30px;
+}
+/* My main title */
+
+.other-nav {
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+	z-index: 9;
+}
+/* The rest of the naviation that will remain hidden in mobile until expanded */
+
+.nav {
+	padding: 10px;
+}
+/* controls the links in other-nav */
+
+.main-nav a {
+	display: block;
+	margin: 0 auto;
+} /* controls all links in the whole navigation */
+
+.copy {
+	display: none;
+}
+/* The copyright; is hidden in mobile until I find a better place for it */
+
+/* -------------------- Everything outside of navigation -------------------- */
+.content {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+/* controls the main content outside of the navigation */
 
 .headline {
 	margin: 0;
+} /* The headline for content */
+
+/* ================================= 
+  Page Color Styles
+==================================== */
+/* -------------------- Here is everything needed to recolor the page in a mobile first approach. Will need to see media queries
+for restylings for larger screens. Will differ from page to page -------------------- */
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	color: #3a3a3a; /* content text color  */
+}
+ 
+.mobile-nav {
+	background: #e7823e /* background of whole nav  */
+}
+
+.other-nav {
+	background: #e6834b; /* background of other-nav  */
+}
+
+.main-nav a {
+	color: #102999; /* text color for links in whole nav  */
+	text-transform: uppercase;
+}
+
+.other-nav a:hover {
+	background: #e79667;
+	color: #5a6596;
+} /* changes what all links do on hover  */
+
+.copy {
+	color: white;
+}
+
+.activelink {
+    background: #e79667;
+    color: #5a6596;
+    border-bottom: 3px solid white;
+    padding-bottom: 7px;
 }
 
 /* ================================= 
-  Media Queries
+Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
 
-	.wrap {
-		min-height: calc(100vh - 89px);
+	body {
+		flex-direction: row;
+	} /* moves the mav and content from column to row  */
+
+	.sidebar {
+		display: flex;
+		height: 100vh;
+		position: fixed;
+	} /* creates a fixed sidebar */
+
+	.mobile-nav {
+		flex-direction: column;
+	} /* moves the focused nav in mobile to a bigger, column view  */
+
+	.name {
+		padding-top: 0;
+	} /* cmoves name closer to photo */
+
+	.m-nav:first-child {
+		padding-right: 10px;
+		margin: 0 25px;
+		padding-bottom: 0px;
+	} /* creates more of a focus on photo */
+
+	.m-nav:last-child {
+		display: none;
+	} /* removes the drop down option to allow other-nav to be displayed on page */
+
+	.logo {
+		width: 180px;
+		height: 180px;
+		box-shadow: 0 1px 14px rgba(0,0,0, .40);
 	}
 
-	.container {
-		width: 90%;
-		max-width: 1024px;
-		margin: 0 auto;
+	.other-nav a {
+		padding: 25px 127px 25px 10px;
 	}
 
-	.main-nav {
-		float: right;
-	}
+	.other-nav {
+		flex-grow: 1;
+		align-content: flex-start;
+	} /*extends other-nav to bottom of view port, and moves links around */
 
-	.name,
-	.main-nav li {
-		float: left;
-	}
+	a.nav {
+		text-align: left;
+	} /* creates more space between links and moves them to the left */
 
-	.main-nav li {
-		display: inline-block;
-		margin-left: 15px;
-	}
+	li.copy {
+		display: block;
+		margin-top: auto;
+		justify-items: center;
+	} /* moves copyright/footer info to bottom of sidebar */
 
-	.tagline {
-		font-size: 1.3em;
-	}
+	.content {
+		padding: 0 10px;
+		display: block;
+		width: calc(100% - 250px);
+		flex: 1;
+		height: 100%;
+		min-height: 100vh;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	} /* allows for content to be a scrollable space and keeps it from falling into the sidebar */
 
-	/* .col {
-		float: left;
-	} 
 
-	.primary {
-		width: 50%;
-	}
-	
-	.secondary {
-		width: 50%;
-	} */
-
-	/* ---- Float clearfix ---- */
-
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
+/* ================================= 
+Style changes in media queries
+==================================== */
+	.other-nav {
+		background: #e7823e;
+		z-index: 10;
+	}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+	a.activelink {
+		border: none;
+		color: #5a6596;
+        border-left: 5px solid white;
+        padding-left: 5px;
+    }
 }
-
-/* @media (min-width: 1025px) {
-
-	.container {
-		width: 80%;
-		max-width: 1150px;
-		margin: 0 auto;
-	}
-
-
-	.primary {
-		width: 40%;
-	}
-	
-	.secondary,
-	.tertiary {
-		width: 30%;
-	}
-} */
