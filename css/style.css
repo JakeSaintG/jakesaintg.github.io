@@ -206,6 +206,21 @@ Media Queries
 
 @media (min-width: 769px) {
 
+	.m-nav:last-child {
+		display: none;
+	} /* removes the drop down option to allow other-nav to be displayed on page */
+
+	.other-nav {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+		flex-direction: row;
+	} /*extends other-nav to bottom of view port, and moves links around */
+
+} /* for better display on iPads/Tablets  */
+
+@media (min-width: 1025px) {
+
 	body {
 		flex-direction: row;
 	} /* moves the mav and content from column to row  */
@@ -220,6 +235,11 @@ Media Queries
 		flex-direction: column;
 	} /* moves the focused nav in mobile to a bigger, column view  */
 
+	.other-nav {
+		flex-direction: column;
+		align-content: flex-start;
+	}
+
 	.name {
 		padding-top: 0;
 	} /* cmoves name closer to photo */
@@ -230,10 +250,6 @@ Media Queries
 		padding-bottom: 0px;
 	} /* creates more of a focus on photo */
 
-	.m-nav:last-child {
-		display: none;
-	} /* removes the drop down option to allow other-nav to be displayed on page */
-
 	.logo {
 		width: 180px;
 		height: 180px;
@@ -243,12 +259,6 @@ Media Queries
 	.other-nav a {
 		padding: 25px 127px 25px 10px;
 	}
-
-	.other-nav {
-		display: flex;
-		flex-grow: 1;
-		align-content: flex-start;
-	} /*extends other-nav to bottom of view port, and moves links around */
 
 	a.nav {
 		text-align: left;
