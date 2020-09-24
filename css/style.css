@@ -9,10 +9,10 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
 	color: #3a3a3a;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 a {
@@ -35,6 +35,7 @@ a {
 .main-nav {
 	box-shadow: 0 1px 14px rgba(0,0,0, .40);
 	flex-direction: column;
+	font-weight: bold;
 }
 /* The entire navigation box */
 
@@ -101,12 +102,40 @@ a {
 .content {
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin-top: 20px;
 }
 /* controls the main content outside of the navigation */
 
-.headline {
-	margin: 0;
+.headline,
+.tagline {
+	margin: 5px;
+	text-align: center;
 } /* The headline for content */
+
+.colsmall {
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	align-items: center;
+	text-align: center;
+}
+
+.aboutMeBodyImg {
+	margin-top: 16px;
+	height: 100px;
+	width: 100px;
+}
+
+.education {
+	margin-bottom: 20px;
+}
 
 /* ================================= 
   Page Color Styles
@@ -115,7 +144,6 @@ a {
 for restylings for larger screens. Will differ from page to page -------------------- */
 
 body {
-	font-family: 'Varela Round', sans-serif;
 	color: #3a3a3a; /* content text color  */
 }
  
@@ -150,6 +178,26 @@ body {
     color: #5a6596;
     border-bottom: 3px solid white;
     padding-bottom: 7px;
+}
+
+.aboutme {
+	background: #e7823e;
+}
+
+.education {
+	background: #e7823e;
+}
+
+.awards {
+	background: #e7823e;
+}
+
+.experience {
+	background: #e7823e;
+}
+
+.goals {
+	background: #e7823e;
 }
 
 /* ================================= 
@@ -213,7 +261,8 @@ Media Queries
 	} /* moves copyright/footer info to bottom of sidebar */
 
 	.content {
-		padding: 0 10px;
+		padding: 10px 20px;
+		margin-top: 0px;
 		display: block;
 		width: calc(100% - 250px);
 		flex: 1;
@@ -225,6 +274,48 @@ Media Queries
 		bottom: 0;
 	} /* allows for content to be a scrollable space and keeps it from falling into the sidebar */
 
+	.col {
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: left;
+		border-radius: .2em;
+		box-shadow: 0 1px 14px rgba(0,0,0, .40);
+	}
+
+	.colsmall {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.text {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.head {
+		float: left;
+		margin-right: 28px;
+	}
+
+	.education {
+		margin-right: 10px;
+		margin-bottom: 0;
+		box-shadow: 0 1px 14px rgba(0,0,0, .40);
+		border-radius: .2em;
+	}
+
+	.awards {
+		margin-left: 10px;
+		box-shadow: 0 1px 14px rgba(0,0,0, .40);
+		border-radius: .2em;
+	}
+
+	.aboutMeBodyImg {
+		margin-top: 0;
+		padding: 20px;
+		height: 200px;
+		width: 200px;
+	}
 
 /* ================================= 
 Style changes in media queries
@@ -233,10 +324,12 @@ Style changes in media queries
 		background: #e7823e;
 		z-index: 10;
 	}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+	
 	a.activelink {
 		border: none;
 		color: #5a6596;
         border-left: 5px solid white;
         padding-left: 5px;
-    }
+	}
+
 }
