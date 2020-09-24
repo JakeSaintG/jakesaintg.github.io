@@ -27,7 +27,6 @@ a {
 
 .main-nav,
 .mobile-nav,
-.other-nav,
 .content {
 	display: flex;
 } 
@@ -41,6 +40,7 @@ a {
 
 .mobile-nav {
 	align-items: center;
+	justify-content: space-between;
 	box-shadow: 0 1px 14px rgba(0,0,0, .40);
 	z-index: 10;
 }
@@ -50,13 +50,13 @@ a {
 	padding: 10px 10px;
 }
 
-.m-nav:first-child {
+/* .m-nav:first-child {
 	padding-right: 0;
-}
+} */
 
 .m-nav:last-child {
-	margin-left: auto;
-}
+	font-size: 38px;
+} 
 /* Moves and controlles the icon for expanding the other-navi section */
 
 .logo {
@@ -73,6 +73,7 @@ a {
 /* My main title */
 
 .other-nav {
+	display: none;
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: center;
@@ -119,7 +120,8 @@ body {
 }
  
 .mobile-nav {
-	background: #e7823e /* background of whole nav  */
+	background: #e7823e; /* background of whole nav  */
+	
 }
 
 .other-nav {
@@ -127,13 +129,16 @@ body {
 }
 
 .main-nav a {
-	color: #102999; /* text color for links in whole nav  */
+	 /* text color for links in whole nav  */
+	color: #102999;
 	text-transform: uppercase;
 }
 
 .other-nav a:hover {
 	background: #e79667;
 	color: #5a6596;
+	transition: 0.4s;
+
 } /* changes what all links do on hover  */
 
 .copy {
@@ -192,6 +197,7 @@ Media Queries
 	}
 
 	.other-nav {
+		display: flex;
 		flex-grow: 1;
 		align-content: flex-start;
 	} /*extends other-nav to bottom of view port, and moves links around */

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/randomlink.css">
+    <link rel="stylesheet" href="css/brad.css">
 </head>
 <body>
     <div class="sidebar">
@@ -18,11 +19,11 @@
                 <li class="m-nav name">
                     <a href="#">JakeSaintG</a>
                 </li>
-                <li class="m-nav arrow trigger">
-                    <a href="#">&lArr;</a>
+                <li class="m-nav menuButton">
+                    <a onclick="showHide()">&#9776</a>
                 </li>
             </ul>
-            <ul class="other-nav">
+            <ul class="other-nav" id="myOthernav">
                 <li>
                     <a class="nav" href="index.html">About Me</a>
                 </li>
@@ -49,12 +50,13 @@
     </div>
     <div class="content"> 
         <div class="banner">
-            <h1 class="headline">Random Link</h1>
+            <marquee class="headline brad">Random Link</marquee>
             <span class="tagline">ALL possible links are wholesome, educational, or charitable. None of
                 them will link to opinions or false information. No possible link will harm your computer and all are reputable sites. ENJOY THE RNG!</span>
+                <p>inspired by Geocities-era Pages (link to Brad.css style sheet)</p>
         </div><!--/.banner-->
         <button>content</button>
     </div>
-
+    <script src="js/menu.js"></script>
 </body>
 </html>
