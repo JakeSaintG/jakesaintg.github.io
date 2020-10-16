@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="main-nav">
+        <nav role =”navigation” aria-label =”pagenav”>
             <ul class="mobile-nav">
                 <li class="m-nav">
                     <img class="logo" src="imgs/Me_Placeholder.jpg" alt="Jake">
@@ -43,19 +43,19 @@
                     <a class="activelink nav" href="randomlink.html">Random Link</a>
                 </li>
                 <li class="copy nav">
-                    &#169;1993 JakeSaintG
+                    <footer role = “contentinfo”>&#169;1993 JakeSaintG</footer>
                 </li>
             </ul>
-        </div> 
+        </nav> 
     </div>
-    <div class="content"> 
-        <div class="banner">
+    <main role =”main”> 
+        <header role = “banner”>
             <h1 class="headline brad">Random Link</h1>
             <p class="tagline">ALL possible links are wholesome, educational, or charitable. None of
                 them will link to opinions or false information. No possible link will harm your computer and all are reputable sites. ENJOY THE RNG!</p>
-        </div><!--/.banner-->
+        </header><!--/.banner-->
         <button value="random link!" onClick="randomlinks()">content</button>
-    </div>
+    </main>
     <script src="js/menu.js"></script>
     <script src="js/randomlink.js"></script>
 </body>

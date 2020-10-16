@@ -23,7 +23,7 @@ body {
 	background: #720E07; /* background of other-nav  */
 }
 
-.main-nav a {
+nav a {
 	color: #D5AC4E; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }

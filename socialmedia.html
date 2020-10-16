@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="main-nav">
+        <nav role =”navigation” aria-label =”pagenav”>
             <ul class="mobile-nav">
                 <li class="m-nav">
                     <img class="logo" src="imgs/Me_Placeholder.jpg" alt="Jake">
@@ -43,16 +43,16 @@
                     <a class="nav" href="randomlink.html">Random Link</a>
                 </li>
                 <li class="copy nav">
-                    &#169;1993 JakeSaintG
+                    <footer role = “contentinfo”>&#169;1993 JakeSaintG</footer>
                 </li>
             </ul>
-        </div> 
+        </nav>
     </div>
-    <div class="content"> 
-        <div class="banner">
+    <main role =”main”> 
+        <header role = “banner”> 
             <h1 class="headline">Social Media</h1>
             <p class="tagline">Follow, subscribe, like, etc. I'm here for a good, wholesome time.</p>
-        </div><!--/.banner-->
+        </header><!--/.banner-->
         <a href="https://www.tiktok.com/@jakesaintg" class="big tiktok">
             <h2>TikTok</h2>
             <p>Here is where I make silly videos as a stress relief! They are mostly centered around nursing but I do have a few that focus on my other interests. I try not to take it too seriously but I certainly have fun making the videos and interacting with the community!</p>
@@ -77,7 +77,7 @@
         <a href="#" class="small placeholder">
             <h2>Placeholder!</h2>
         </a>
-    </div>
+    </main>
     <script src="js/menu.js"></script>
 </body>
 </html>

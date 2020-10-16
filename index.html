@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="main-nav">
+        <nav role =”navigation” aria-label =”pagenav”>
             <ul class="mobile-nav">
                 <li class="m-nav">
                     <img class="logo" src="imgs/Me_Placeholder.jpg" alt="Jake">
@@ -43,16 +43,16 @@
                     <a class="nav" href="randomlink.html">Random Link</a>
                 </li>
                 <li class="copy nav">
-                    &#169;1993 JakeSaintG
+                    <footer role = “contentinfo”>&#169;1993 JakeSaintG</footer>
                 </li>
             </ul>
-        </div> 
+        </nav> 
     </div>
-    <div class="content"> 
-        <div class="banner">
+    <main role =”main”> 
+        <header role = “banner”>
             <h1 class="headline">Jake St. Germain</h1>
             <p class="tagline">Registered Nurse and Registered Nerd. Part time developer and full time cat enthusiast.</p>
-        </div><!--/.banner-->
+        </header><!--/.banner-->
         <div class="info">
             <div class="col aboutme">
                 <img class="aboutMeBodyImg" src="imgs/meRN.JPG" alt="Jake">
@@ -117,7 +117,8 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-    </div>
+        </div>
+    </main>
     <script src="js/menu.js"></script>
 </body>
 </html>
