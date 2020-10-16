@@ -2,36 +2,40 @@
   Page Color Styles
 ==================================== */
 
+/* ================================= 
+  Palette
+  Main: #212529;
+  Secondary: #495057;
+  Active: #6C757D;
+  Text: #CED4DA;
+  Text-active: #E9ECEF;
+==================================== */
+
 body {
 	color: #3a3a3a; /* content text color  */
 }
  
 .mobile-nav {
-	background: #1f1f1f /* background of whole nav  */
+	background: #212529; /* background of whole nav  */
 }
 
 .other-nav {
-	background: #3b3b3b; /* background of other-nav  */
+	background: #495057; /* background of other-nav  */
 }
 
 .main-nav a {
-	color: #ffffff; /* text color for links in whole nav  */
+	color: #CED4DA; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }
 
-.main-nav a:hover {
-	background: #505050;
-	color: white;
-} /* changes what all links do on hover  */
-
 .copy {
-    color: white;
+    color: #CED4DA;
 }
 
-.activelink {
-    background: #505050;
-    color: white;
-    border-bottom: 3px solid white;
+a.activelink {
+    background: #6C757D;
+    color: #E9ECEF;
+    border-bottom: 3px solid #E9ECEF;
     padding-bottom: 7px;
 }
 
@@ -82,16 +86,23 @@ body {
 /* ================================= 
 Style changes in media queries
 ==================================== */
-    .other-nav {
-        background: #1f1f1f;
-        z-index: 10;
-    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+.other-nav {
+    background: #212529;
+    z-index: 10;
+}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
-    a.activelink {
-        border: none;
-        border-left: 5px solid white;
-        padding-left: 5px;
-    }
+.other-nav a:hover,
+a.activelink {
+    background: #495057; /* Used "Secondary" on color palette.  */
+    color: #E9ECEF;
+} /* changes what all links do on hover  */
+
+a.activelink {
+    border: none;
+    padding-bottom: 25px;
+    border-left: 5px solid #E9ECEF;
+    padding-left: 5px;
+}
 
     .projects {
         display: inline-block;

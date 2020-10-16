@@ -2,36 +2,40 @@
   Page Color Styles
 ==================================== */
 
+/* ================================= 
+  Palette
+  Main: #22577A;
+  Secondary: #2D7D90;
+  Active: #33909B;
+  Text: #A4F3B3;
+  Text-active: #C7F9CC;
+==================================== */
+
 body {
 	color: #3a3a3a; /* content text color  */
 }
  
 .mobile-nav {
-	background: #e4cd4f /* background of whole nav  */
+	background: #22577A; /* background of whole nav  */
 }
 
 .other-nav {
-	background: #f8e578; /* background of other-nav  */
+	background: #2D7D90; /* background of other-nav  */
 }
 
 .main-nav a {
-	color: #06070c; /* text color for links in whole nav  */
+	color: #A4F3B3; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }
 
-.other-nav a:hover {
-	background: #e4d582;
-	color: black;
-} /* changes what all links do on hover  */
-
 .copy {
-    color: black;
+    color: #A4F3B3;
 }
 
-.activelink {
-    background: #e4d582;
-    color: black;
-    border-bottom: 3px solid white;
+a.activelink {
+    background: #33909B;
+    color: #C7F9CC;
+    border-bottom: 3px solid #C7F9CC;
     padding-bottom: 7px;
 }
 
@@ -82,16 +86,23 @@ body {
 /* ================================= 
 Style changes in media queries
 ==================================== */
-    .other-nav {
-        background: #e4cd4f;
-        z-index: 10;
-    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+.other-nav {
+    background: #22577A;
+    z-index: 10;
+}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
-    a.activelink {
-        color: black;
-        border-left: 5px solid white;
-        padding-left: 5px;
-    }
+.other-nav a:hover,
+a.activelink {
+    background: #2D7D90; /* Used "Secondary" on color palette.  */
+    color: #C7F9CC;
+} /* changes what all links do on hover  */
+
+a.activelink {
+    border: none;
+    padding-bottom: 25px;
+    border-left: 5px solid #C7F9CC;
+    padding-left: 5px;
+}
 
     .projects {
         display: inline-block;

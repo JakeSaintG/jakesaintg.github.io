@@ -2,36 +2,40 @@
   Page Color Styles
 ==================================== */
 
+/* ================================= 
+  Palette
+  Main: #45050C;
+  Secondary: #720E07;
+  Active: #7F3814;
+  Text: #D5AC4E;
+  Text-active: #EECF6D;
+==================================== */
+
 body {
 	color: #3a3a3a; /* content text color  */
 }
  
 .mobile-nav {
-	background: #d34949 /* background of whole nav  */
+	background: #45050C; /* background of whole nav  */
 }
 
 .other-nav {
-	background: #cc6262; /* background of other-nav  */
+	background: #720E07; /* background of other-nav  */
 }
 
 .main-nav a {
-	color: #06070c; /* text color for links in whole nav  */
+	color: #D5AC4E; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }
 
-.other-nav a:hover {
-	background: #be6d6d;
-	color: white;
-} /* changes what all links do on hover  */
-
 .copy {
-    color: white;
+    color: #D5AC4E;
 }
 
-.activelink {
-    background: #be6d6d;
-    color: white;
-    border-bottom: 3px solid white;
+a.activelink {
+    background: #7F3814;
+    color: #EECF6D;
+    border-bottom: 3px solid #EECF6D;
     padding-bottom: 7px;
 }
 
@@ -83,13 +87,20 @@ body {
 Style changes in media queries
 ==================================== */
     .other-nav {
-        background: #d34949;
+        background: #45050C;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
+    .other-nav a:hover,
     a.activelink {
-        color: white;
-        border-left: 5px solid white;
+        background: #720E07; /* Used "Secondary" on color palette.  */
+        color: #EECF6D;
+    } /* changes what all links do on hover  */
+
+    a.activelink {
+        border: none;
+        padding-bottom: 25px;
+        border-left: 5px solid #EECF6D;
         padding-left: 5px;
     }
 

@@ -143,61 +143,55 @@ a {
 /* -------------------- Here is everything needed to recolor the page in a mobile first approach. Will need to see media queries
 for restylings for larger screens. Will differ from page to page -------------------- */
 
+/* ================================= 
+  Palette
+  Main: #1E1E24;
+  Secondary: #444140;
+  Active: #F7EBE8;
+  Text: #E54B4B;
+  Text-active: #FFA987;
+==================================== */
+
 body {
 	color: #3a3a3a; /* content text color  */
 }
  
 .mobile-nav {
-	background: #e7823e; /* background of whole nav  */
-	
+	background: #1E1E24; /* background of whole nav  */
 }
 
 .other-nav {
-	background: #e6834b; /* background of other-nav  */
+	background: #444140; /* background of other-nav  */
 }
 
 .main-nav a {
-	 /* text color for links in whole nav  */
-	color: #102999;
+	color: #E54B4B; /* text color for links in whole nav  */
 	text-transform: uppercase;
 }
 
-.other-nav a:hover {
-	background: #e79667;
-	color: #5a6596;
-	transition: 0.4s;
-
-} /* changes what all links do on hover  */
-
 .copy {
-	color: white;
+    color: #E54B4B;
 }
 
-.activelink {
-    background: #e79667;
-    color: #5a6596;
-    border-bottom: 3px solid white;
+a.activelink {
+    background: #F7EBE8;
+    color: #FFA987;
+    border-bottom: 3px solid #FFA987;
     padding-bottom: 7px;
 }
 
-.aboutme {
-	background: #e7823e;
+.aboutme,
+.education,
+.experience,
+.inspirations {
+	background: #1E1E24;
+	color: #E54B4B;
 }
 
-.education {
-	background: #e7823e;
-}
-
-.awards {
-	background: #e7823e;
-}
-
-.experience {
-	background: #e7823e;
-}
-
+.awards,
 .goals {
-	background: #e7823e;
+	background: #444140;
+	color: #FFA987;
 }
 
 /* ================================= 
@@ -223,7 +217,7 @@ Media Queries
 
 	body {
 		flex-direction: row;
-	} /* moves the mav and content from column to row  */
+	} /* moves the nav and content from column to row  */
 
 	.sidebar {
 		display: flex;
@@ -308,14 +302,13 @@ Media Queries
 	}
 
 	.education {
-		margin-right: 10px;
-		margin-bottom: 0;
+		margin: 0 10px 0 0;
 		box-shadow: 0 1px 14px rgba(0,0,0, .40);
 		border-radius: .2em;
 	}
 
-	.awards {
-		margin-left: 10px;
+	.goals {
+		margin: 0 0 0 10px;
 		box-shadow: 0 1px 14px rgba(0,0,0, .40);
 		border-radius: .2em;
 	}
@@ -331,15 +324,22 @@ Media Queries
 Style changes in media queries
 ==================================== */
 	.other-nav {
-		background: #e7823e;
+		background: #1E1E24;
 		z-index: 10;
 	}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
-	
+
+	.other-nav a:hover,
+	a.activelink {
+		background: #444140; /* Used "Secondary" on color palette.  */
+		color: #FFA987;
+		transition: 0.4s;
+	} /* changes what all links do on hover  */
+
 	a.activelink {
 		border: none;
-		color: #5a6596;
-        border-left: 5px solid white;
-        padding-left: 5px;
+		padding-bottom: 25px;
+		border-left: 5px solid #FFA987;
+		padding-left: 5px;
 	}
-
 }
+
