@@ -43,82 +43,115 @@ a.activelink {
   Content Style
 ==================================== */
 
-.projects {
-    background: #fff;
+.big {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
     border-radius: .2em;
-    border: solid 1px rgba(88, 183, 205, .2);
-    border-bottom: solid 2px rgba(88, 183, 205, .2);
-    clear: both;
-    padding-bottom: 38px;
-    margin: 5px 4px;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    margin: 20px auto;
 }
 
-.entry {
-    text-align: center;
+.sprite {
+    background: url(../imgs/socialspritesheet.png) no-repeat;
+    min-width: 180px; /* width of container */
+    height: 180px; /* height of container */
 }
 
-.goto,
-.gh {
-    font-size: .78em;
-    border-radius: .3em;
-    padding: .4em 1.8em;
-    color: white;
-    margin: 0 15px;
+.tiktok > .sprite {
+    background-position: -10px -90px;
+    border-radius: .2em 0 0 .2em;
 }
 
-.goto {
-    background-color: #102999;
+.github > .sprite {
+    background-position: -210px -90px;
+    border-radius: .2em 0 0 .2em;
+}
+
+.linkedin > .sprite {
+    background-position: -410px -90px;
+    border-radius: .2em 0 0 .2em;
+}
+
+.text {
+    display: inline-block;
+    margin: 0 10px;
+} /* placed here again to over ride styling from main style.css */
+
+.head {
     float: left;
-    margin-right: .4em;
+    margin-right: 15px;
+    margin-bottom: 10px;
+} /* placed here again to over ride styling from main style.css */
+
+.smallsocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-.gh {
-    background-color: rgba(211, 146, 27, .5);
-    float: right;
-    margin-left: .4em;
-
+.smallsprite {
+    display: inline-block;
+    background: url(../imgs/socialspritesheet.png) no-repeat;
+    min-width: 80px;
+    height: 80px; 
 }
 
+.linktree > .smallsprite {
+    background-position: -10px -490px;
+}
+
+.reddit > .smallsprite {
+    background-position: -180px -490px;
+}
+
+.twitter > .smallsprite {
+    background-position: -350px -490px;
+}
+
+.instagram > .smallsprite {
+    background-position: -520px -490px;
+}
+
+.small > h4 {
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 769px) {
+    .smallicon {
+        width: 180px; 
+        height: 180px; 
+    }
+    .head {
+        float: left;
+        margin-right: 28px;
+        margin-bottom: 20px;
+    }
+}
 
 @media (min-width: 1025px) { 
 
 /* ================================= 
 Style changes in media queries
 ==================================== */
-.other-nav {
-    background: #212529;
-    z-index: 10;
-}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+    .other-nav {
+        background: #212529;
+        z-index: 10;
+    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
-.other-nav a:hover,
-a.activelink {
-    background: #495057; /* Used "Secondary" on color palette.  */
-    color: #E9ECEF;
-} /* changes what all links do on hover  */
+    .other-nav a:hover,
+    a.activelink {
+        background: #495057; /* Used "Secondary" on color palette.  */
+        color: #E9ECEF;
+    } /* changes what all links do on hover  */
 
-a.activelink {
-    border: none;
-    padding-bottom: 25px;
-    border-left: 5px solid #E9ECEF;
-    padding-left: 5px;
-}
-
-    .projects {
-        display: inline-block;
-        padding-bottom: 0;
-    }
-    
-    .box {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .goto,
-    .gh { 
-        margin: 1em;
-        display: inline-block;
+    a.activelink {
+        border: none;
+        padding-bottom: 25px;
+        border-left: 5px solid #E9ECEF;
+        padding-left: 5px;
     }
 
 }
