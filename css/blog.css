@@ -39,45 +39,51 @@ a.activelink {
     padding-bottom: 7px;
 }
 
+.post_head {
+    background: #3C0D64;
+    color: #BCDDE5;
+}
+
 /* ================================= 
   Content Style
 ==================================== */
 
-.projects {
-    background: #fff;
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background: #3C0D64;
+    color: #BCDDE5;
+    border: 3px solid #BCDDE5;
     border-radius: .2em;
-    border: solid 1px rgba(88, 183, 205, .2);
-    border-bottom: solid 2px rgba(88, 183, 205, .2);
-    clear: both;
-    padding-bottom: 38px;
-    margin: 5px 4px;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
 }
 
-.entry {
-    text-align: center;
+button:hover { 
+    background: #441F8A;
+    color: #F1F7F9;
+    border-color: #F1F7F9;
 }
 
-.goto,
-.gh {
-    font-size: .78em;
-    border-radius: .3em;
-    padding: .4em 1.8em;
-    color: white;
-    margin: 0 15px;
+
+.post_full {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    margin: 20px auto;
+    border-radius: .2em;
 }
 
-.goto {
-    background-color: #102999;
-    float: left;
-    margin-right: .4em;
+.post_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .2em .2em 0 0;
+    padding: 0 20px;
 }
 
-.gh {
-    background-color: rgba(211, 146, 27, .5);
-    float: right;
-    margin-left: .4em;
-
+.post_content {
+    padding: 0 20px;
 }
 
 
