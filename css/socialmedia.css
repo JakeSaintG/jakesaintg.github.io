@@ -52,6 +52,10 @@ a.activelink {
     margin: 20px auto;
 }
 
+main a:-webkit-any-link {
+	color: #212529;
+} /* hotfix for the way that webkit was styling colored text nested in link  */
+
 .sprite {
     background: url(../imgs/socialspritesheet.png) no-repeat;
     min-width: 180px; /* width of container */

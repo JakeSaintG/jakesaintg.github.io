@@ -15,9 +15,10 @@ body {
 	font-family: 'Kumbh Sans', sans-serif;
 }
 
-a {
+a:link, a:visited {
 	text-decoration: none;
 }
+
 
 /* ================================= 
   Base Layout Styles
@@ -137,6 +138,34 @@ main {
 	margin-bottom: 20px;
 }
 
+.insp_icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	text-decoration: none;
+}
+
+.rick,
+.jpp,
+.brad,
+.ethan,
+.matt,
+.christine {
+	flex: 1 0 41%;
+}
+
+.insp_icon  a  img {
+	width: 160px;
+	height: 160px;
+}
+
+.insp_icon a:-webkit-any-link {
+	color: #E54B4B; 
+} /* hotfix for the way that webkit was styling colored text nested in link  */
+
+
 /* ================================= 
   Page Color Styles
 ==================================== */
@@ -194,6 +223,7 @@ a.activelink {
 	color: #FFA987;
 }
 
+
 /* ================================= 
 Media Queries
 ==================================== */
@@ -210,6 +240,15 @@ Media Queries
 		justify-content: space-between;
 		flex-direction: row;
 	} /*extends other-nav to bottom of view port, and moves links around */
+
+	.rick,
+	.jpp,
+	.brad,
+	.ethan,
+	.matt,
+	.christine {
+		flex: 1 0 31%;
+	}
 
 } /* for better display on iPads/Tablets  */
 
@@ -318,6 +357,13 @@ Media Queries
 		padding: 20px;
 		height: 200px;
 		width: 200px;
+	}
+
+	.inspirations {
+		flex-direction: column;
+		margin-right: auto;
+		margin-left: auto;
+		align-items: center;
 	}
 
 /* ================================= 
