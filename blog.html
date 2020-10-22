@@ -53,13 +53,17 @@
             <h1 class="headline">Blog</h1>
             <p class="tagline">Here are some of my thoughts! I would love to hear yours as well!</p>
         </header><!--/.banner-->
-        <button>Submit Post</button>
-        <form class="post_full" action="">
-            <div class="post_head">
-                <label for="title">Post Title</label>
-                <input type="text" id="posttitle" name="title">
-                <label for="post_author">Post Author</label>
-                <input type="text" id="post_author" name="post_author">
+        <button onclick="blogShowHide()">Submit Post</button>
+        <form class="form_full" id="form_full" action="">
+            <div class="form_head">
+                <div class="form_item">
+                    <label for="title">Post Title:&nbsp; &nbsp;</label>
+                    <input type="text" id="posttitle" name="title">
+                </div>
+                <div class="form_item">
+                    <label for="post_author">Post Author:&nbsp; &nbsp;</label>
+                    <input type="text" id="post_author" name="post_author">
+                </div>
             </div>
             <div class="post_content">
                 <label for="post_content">Post:</label>
@@ -137,5 +141,7 @@
         </article>
     </main>
     <script src="js/menu.js"></script>
+    <script src="js/blogshowhide.js"></script>
+    <script src="js/blogpost.js"></script>
 </body>
 </html>
