@@ -124,15 +124,18 @@ textarea {
     margin: 10px 0;
 }
 
+@media (min-width: 769px) {
+    .other-nav {
+        background: #3C0D64;
+        z-index: 10;
+    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+}
+
 @media (min-width: 1025px) { 
 
 /* ================================= 
 Style changes in media queries
 ==================================== */
-    .other-nav {
-        background: #3C0D64;
-        z-index: 10;
-    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     .other-nav a:hover,
     a.activelink {

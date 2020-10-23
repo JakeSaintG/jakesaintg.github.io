@@ -103,6 +103,9 @@ nav a {
 main {
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+header {
 	margin-top: 20px;
 }
 /* controls the main content outside of the navigation */
@@ -250,6 +253,11 @@ Media Queries
 		flex: 1 0 31%;
 	}
 
+	.other-nav {
+		background: #1E1E24;
+		z-index: 10;
+	}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+
 } /* for better display on iPads/Tablets  */
 
 @media (min-width: 1025px) {
@@ -305,7 +313,7 @@ Media Queries
 
 	main {
 		padding: 10px 20px;
-		margin-top: 0px;
+		margin-top: 70px;
 		display: block;
 		width: calc(100% - 250px);
 		flex: 1;
@@ -316,6 +324,16 @@ Media Queries
 		right: 0;
 		bottom: 0;
 	} /* allows for content to be a scrollable space and keeps it from falling into the sidebar */
+
+	header {
+		position: absolute;
+		flex: 1;
+		width: calc(100% - 250px);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		height: 10%;
+	}
 
 	.col {
 		flex-direction: row;
@@ -369,10 +387,6 @@ Media Queries
 /* ================================= 
 Style changes in media queries
 ==================================== */
-	.other-nav {
-		background: #1E1E24;
-		z-index: 10;
-	}  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
 	.other-nav a:hover,
 	a.activelink {

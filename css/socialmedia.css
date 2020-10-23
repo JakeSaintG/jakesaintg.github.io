@@ -133,6 +133,11 @@ main a:-webkit-any-link {
         margin-right: 28px;
         margin-bottom: 20px;
     }
+    
+    .other-nav {
+        background: #212529;
+        z-index: 10;
+    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 }
 
 @media (min-width: 1025px) { 
@@ -140,10 +145,6 @@ main a:-webkit-any-link {
 /* ================================= 
 Style changes in media queries
 ==================================== */
-    .other-nav {
-        background: #212529;
-        z-index: 10;
-    }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     .other-nav a:hover,
     a.activelink {
