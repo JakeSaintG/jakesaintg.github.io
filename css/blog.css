@@ -59,6 +59,10 @@ button {
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
 }
 
+.post_submit {
+    margin-top: 0px;
+}
+
 button:hover { 
     background: #441F8A;
     color: #F1F7F9;
@@ -88,7 +92,7 @@ button:hover {
 }
 
 .form_full {
-    display: none;
+    display: none; /* CHANGE THIS TO DISPLAY: NONE!!! */
     flex-direction: column;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     margin: 20px 0;
@@ -120,8 +124,30 @@ button:hover {
     height: 100%;
 }
 
+#post_author,
+#posttitle {
+    color: black;
+    
+}
+
 textarea {
     margin: 10px 0;
+    height: 1000px;
+}
+
+.post_title {
+    max-width: 67%;
+    word-wrap: break-word;
+}
+
+.post_details {
+    max-width: 33%;
+}
+
+.post_content,
+.post_title,
+.post_author {
+    word-wrap: break-word;
 }
 
 @media (min-width: 769px) {

@@ -53,29 +53,51 @@
         <p class="tagline">Here are some of my thoughts! I would love to hear yours as well!</p>
     </header>
     <main role =”main”> 
-        <button onclick="blogShowHide()">Submit Post</button>
+        <button onclick="blogShowHide()">Write Post</button>
         <form class="form_full" id="form_full" action="">
             <div class="form_head">
                 <div class="form_item">
                     <label for="title">Post Title:&nbsp; &nbsp;</label>
-                    <input type="text" id="posttitle" name="title">
+                    <input type="text" maxlength="60" id="posttitle" name="title">
                 </div>
                 <div class="form_item">
                     <label for="post_author">Post Author:&nbsp; &nbsp;</label>
-                    <input type="text" id="post_author" name="post_author">
+                    <input type="text" maxlength="30" id="post_author" name="post_author">
                 </div>
             </div>
             <div class="post_content">
                 <label for="post_content">Post:</label>
-                <textarea id="post_content" name="post_content"> </textarea>
-                <input type="submit" value="Submit">
+                <textarea id="post_content" name="post_content"></textarea>
+                <button type="button" value="Submit" class="post_submit" onclick="populatePost()">Submit</button>
             </div>
         </form>
+        <article id=post></article>
         <article class="post_full">
             <div class="post_head">
                 <h1 class="post_title">Post Title</h1>
                 <div class="post_details">
-                    <h3 class="post_author">Post Author</h3>
+                    <h3 class="post_author">By: Post Author</h3>
+                    <h3 class="post_date">Post Date</h3>
+                </div>
+            </div>
+            <p class="post_content">post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+                post post post post post post post post post post post post post post post post post post post post post 
+            </p>
+        </article>
+        <article class="post_full">
+            <div class="post_head">
+                <h1 class="post_title">Post Title</h1>
+                <div class="post_details">
+                    <h3 class="post_author">By: Post Author</h3>
                     <h3 class="post_date">Post Date</h3>
                 </div>
             </div>
@@ -92,7 +114,7 @@
             <div class="post_head">
                 <h1 class="post_title">Post Title</h1>
                 <div class="post_details">
-                    <h3 class="post_author">Post Author</h3>
+                    <h3 class="post_author">By: Post Author</h3>
                     <h3 class="post_date">Post Date</h3>
                 </div>
             </div>
@@ -109,24 +131,7 @@
             <div class="post_head">
                 <h1 class="post_title">Post Title</h1>
                 <div class="post_details">
-                    <h3 class="post_author">Post Author</h3>
-                    <h3 class="post_date">Post Date</h3>
-                </div>
-            </div>
-            <p class="post_content">post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-                post post post post post post post post post post post post post post post post post post post post post 
-            </p>
-        </article>
-        <article class="post_full">
-            <div class="post_head">
-                <h1 class="post_title">Post Title</h1>
-                <div class="post_details">
-                    <h3 class="post_author">Post Author</h3>
+                    <h3 class="post_author">By: Post Author</h3>
                     <h3 class="post_date">Post Date</h3>
                 </div>
             </div>
