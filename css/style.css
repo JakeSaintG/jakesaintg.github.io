@@ -155,7 +155,9 @@ header {
 .brad,
 .ethan,
 .matt,
-.christine {
+.drew,
+.christine,
+.paige {
 	flex: 1 0 41%;
 }
 
@@ -249,8 +251,10 @@ Media Queries
 	.brad,
 	.ethan,
 	.matt,
-	.christine {
-		flex: 1 0 31%;
+	.drew,
+	.christine,
+	.paige {
+		flex: 1 0 23%;
 	}
 
 	.other-nav {
