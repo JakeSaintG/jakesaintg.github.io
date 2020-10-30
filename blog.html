@@ -58,16 +58,16 @@
             <div class="form_head">
                 <div class="form_item">
                     <label for="title">Post Title:&nbsp; &nbsp;</label>
-                    <input type="text" maxlength="60" id="posttitle" name="title">
+                    <input type="text" maxlength="60" id="posttitle" name="title" required="required">
                 </div>
                 <div class="form_item">
                     <label for="post_author">Post Author:&nbsp; &nbsp;</label>
-                    <input type="text" maxlength="30" id="post_author" name="post_author">
+                    <input type="text" maxlength="30" id="post_author" name="post_author" required="required">
                 </div>
             </div>
             <div class="post_content">
                 <label for="post_content">Post:</label>
-                <textarea id="post_content" name="post_content"></textarea>
+                <textarea id="post_content" name="post_content" required="required"></textarea>
                 <button type="button" value="Submit" class="post_submit" onclick="populatePost()">Submit</button>
             </div>
         </form>

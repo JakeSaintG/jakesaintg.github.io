@@ -1,13 +1,19 @@
-//To do: validate data to ensure that something must be in the text boxes
 //To do: Be able to make mulitple posts by resetting form on submit and allowing it to create another div
 
 function populatePost() {
+
 const title = document.getElementById("posttitle").value;
-console.log(title)
+if (title == "") {
+    alert("The title of your post must be filled out.");
+    }
 const author = document.getElementById("post_author").value;
-console.log(author)
+if (author == "") {
+    alert("Author must be filled out. You can use your real name, username, or pen name.");
+    }
 const post = document.getElementById("post_content").value;
-console.log(post)
+if (post == "") {
+    alert("Blog must be filled out. We want to hear what you have to say!");
+    }
 
 let today = new Date(); // "new" operator prevents the date from being a string 
 let d = today.getDate();
