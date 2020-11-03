@@ -43,42 +43,59 @@ a.activelink {
   Content Style
 ==================================== */
 
-.projects {
-    background: #fff;
-    border-radius: .2em;
-    border: solid 1px rgba(88, 183, 205, .2);
-    border-bottom: solid 2px rgba(88, 183, 205, .2);
-    clear: both;
-    padding-bottom: 38px;
-    margin: 5px 4px;
-    box-shadow: 0 1px 14px rgba(0,0,0, .40);
-}
+main a:-webkit-any-link {
+	color: rgb(160, 127, 98);
+} /* hotfix for the way that webkit was styling colored text nested in link  */
 
-.entry {
+.minecraft {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    background-color: rgb(146, 150, 146);
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    color: rgb(27, 27, 26);
+    margin: 20px 0 0 0;
 }
 
-.goto,
-.gh {
-    font-size: .78em;
-    border-radius: .3em;
-    padding: .4em 1.8em;
-    color: white;
-    margin: 0 15px;
+.head {
+    margin: 24px 10px 10px 0;
 }
 
-.goto {
-    background-color: #102999;
-    float: left;
-    margin-right: .4em;
+.minecraft > h2 {
+    margin-bottom: 0;
+}
+.minecraft > p {
+    margin: 0 auto 20px auto;
 }
 
-.gh {
-    background-color: rgba(211, 146, 27, .5);
-    float: right;
-    margin-left: .4em;
-
+.minecraft > div {
+    justify-content: space-between;
 }
+
+.minecraft > div > a {
+    border-radius: .2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.minecraft > div > a > div {
+    display: none;
+}
+
+.minecraft > div > .bedrock > img {
+    border-radius: 20px;
+}
+
+.minecraft > div > a > img {
+    margin: 10px;
+}
+
+.minecraft > div {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
 
 @media (min-width: 769px) {
     .other-nav {
@@ -107,21 +124,24 @@ Style changes in media queries
         padding-left: 5px;
     }
 
-    .projects {
-        display: inline-block;
-        padding-bottom: 0;
+    .minecraft {
+        margin: 20px auto 0 auto;
+        border-radius: .2em;
     }
-    
-    .box {
-        width: 90%;
-        margin: auto;
-        text-align: center;
+    .minecraft > div > a {
+        background-color: rgb(43, 42, 42);
+        box-shadow: 0 1px 14px rgba(0,0,0, .40);
     }
 
-    .goto,
-    .gh { 
-        margin: 1em;
-        display: inline-block;
+    .bedrock {
+        margin: 0 5px 10px 10px;
     }
 
+    .java {
+        margin: 0 10px 10px 5px;
+    }
+
+    .minecraft > div > a > div {
+        display: block;
+    }
 }

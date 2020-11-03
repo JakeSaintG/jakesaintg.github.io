@@ -31,7 +31,6 @@ if(m<10)
 } 
 
 today = `${m}/${d}/${y}`;
-console.log(today);
 
 document.getElementById("post").innerHTML = `<article class="post_full">
 <div class="post_head">
