@@ -123,6 +123,27 @@ main a:-webkit-any-link {
     margin: 0;
 }
 
+.safety {
+    background-color: #212529;
+    color: #CED4DA;
+    text-align: center;
+    padding: 10px;
+    border-radius: .2em;
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.safety a:-webkit-any-link {
+    color: #E9ECEF;
+    background-color: #6C757D;
+    padding: 15px;
+    border-radius: .2em;
+    font-weight: bold;
+}
+
 @media (min-width: 769px) {
     .smallicon {
         width: 180px; 

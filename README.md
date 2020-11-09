@@ -2,6 +2,12 @@
 
 ### This is a simple portfolio page for Jake St. Germain!
 
+### Description
+
+
+### Instructions
+
+
 ### Features:
 - Navigation menu that hides away in mobile view and is visible in desktop browser. The menu can be summoned in mobile by clicking the icon in the upper right corner of the page.
 - Static side bar that does not move when scrolling through the page on desktop view.
@@ -14,8 +20,9 @@
     Daft Punk Soundboard - A soundboard that allows users to click/touch buttons on the screen and produce audio.
     (WIP)Med Calc - Medical formulas that will allow the user to input vital signs, lab results, and other clinical findings to determine patient outcomes (mean arterial pressure, mean airway pressure, cerebral perfusion pressure, and oxygenation index are planned).
     (WIP)Pros and Cons App
+- Some images are loaded from a self-made sprite sheet to make site loading easier.
 
-### Code Louisville Requirments met:
+### Code Louisville Requirements met:
 - A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal, or is opened by clicking the “hamburger” menu item
 - Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. For example, swapping from a single column layout to a two-column layout on desktop
 - Use “:nth-child” or “nth-of-type” to style a series of elements on your page
