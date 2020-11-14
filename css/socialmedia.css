@@ -43,6 +43,10 @@ a.activelink {
   Content Style
 ==================================== */
 
+main {
+    padding: 0;
+}
+
 .big {
     display: flex;
     flex-direction: row;
@@ -127,7 +131,7 @@ main a:-webkit-any-link {
     background-color: #212529;
     color: #CED4DA;
     text-align: center;
-    padding: 10px;
+    padding: 0 16px 16px 16px;
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     display: flex;
@@ -159,6 +163,10 @@ main a:-webkit-any-link {
         background: #212529;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+
+    main {
+        padding: 0 10px;
+    }
 }
 
 @media (min-width: 1025px) { 

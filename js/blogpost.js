@@ -5,14 +5,17 @@ function populatePost() {
 const title = document.getElementById("posttitle").value;
 if (title == "") {
     alert("The title of your post must be filled out.");
+    return
     }
 const author = document.getElementById("post_author").value;
 if (author == "") {
     alert("Author must be filled out. You can use your real name, username, or pen name.");
+    return
     }
 const post = document.getElementById("post_content").value;
 if (post == "") {
     alert("Blog must be filled out. We want to hear what you have to say!");
+    return
     }
 
 let today = new Date(); // "new" operator prevents the date from being a string 

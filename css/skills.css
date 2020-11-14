@@ -43,6 +43,14 @@ a.activelink {
   Content Style
 ==================================== */
 
+main {
+    padding: 10px 0;
+}
+
+main a:-webkit-any-link {
+	color: black;
+} /* hotfix for the way that webkit was styling colored text nested in link  */
+
 .big {
     display: flex;
     flex-direction: row;
@@ -133,6 +141,10 @@ a.activelink {
         background: #22577A;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+
+    main {
+        padding: 10px 20px;
+    }
 }
 
 

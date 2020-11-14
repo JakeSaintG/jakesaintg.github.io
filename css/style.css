@@ -317,12 +317,12 @@ Media Queries
 
 	main {
 		padding: 10px 20px;
-		margin-top: 70px;
+		margin-top: 80px;
 		display: block;
 		width: calc(100% - 250px);
 		flex: 1;
 		height: 100%;
-		min-height: 100vh;
+		max-height: calc(100vh - 280px);
 		position: absolute;
 		top: 0;
 		right: 0;

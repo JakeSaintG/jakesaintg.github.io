@@ -125,7 +125,7 @@ Style changes in media queries
     }
 
     .minecraft {
-        margin: 20px auto 0 auto;
+        margin: 10px auto 0 auto;
         border-radius: .2em;
     }
     .minecraft > div > a {

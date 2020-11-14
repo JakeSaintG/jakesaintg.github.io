@@ -49,9 +49,13 @@ a.activelink {
   Content Style
 ==================================== */
 
+main {
+    padding: 0 10px;
+}
+
 button {
     margin-top: 20px;
-    padding: 15px;
+    padding: 20px;
     background: #3C0D64;
     color: #BCDDE5;
     border: 3px solid #BCDDE5;
@@ -150,11 +154,24 @@ textarea {
     word-wrap: break-word;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 769px) {
     .other-nav {
         background: #3C0D64;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+
+    button {
+        width: 50%;
+    }
+    .buttons {
+        flex-direction: row;
+    }
+
 }
 
 @media (min-width: 1025px) { 
@@ -178,7 +195,6 @@ Style changes in media queries
 
     .form_head {
         flex-direction: row;
-        
         justify-content: space-between;
     }
 
@@ -191,4 +207,8 @@ Style changes in media queries
         padding-top: 0;
     }
 
+    button {
+        width: 25%;
+        margin-right: 10px;
+    }
 }
