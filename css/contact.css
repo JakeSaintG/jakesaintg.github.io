@@ -43,58 +43,7 @@ a.activelink {
   Content Style
 ==================================== */
 
-main a:-webkit-any-link {
-	color: rgb(160, 127, 98);
-} /* hotfix for the way that webkit was styling colored text nested in link  */
 
-.minecraft {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(146, 150, 146);
-    box-shadow: 0 1px 14px rgba(0,0,0, .40);
-    color: rgb(27, 27, 26);
-    margin: 20px 0 0 0;
-}
-
-.head {
-    margin: 24px 10px 10px 0;
-}
-
-.minecraft > h2 {
-    margin-bottom: 0;
-}
-.minecraft > p {
-    margin: 0 auto 20px auto;
-}
-
-.minecraft > div {
-    justify-content: space-between;
-}
-
-.minecraft > div > a {
-    border-radius: .2em;
-    display: flex;
-    flex-direction: row;
-}
-
-.minecraft > div > a > div {
-    display: none;
-}
-
-.minecraft > div > .bedrock > img {
-    border-radius: 20px;
-}
-
-.minecraft > div > a > img {
-    margin: 10px;
-}
-
-.minecraft > div {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-}
 
 
 @media (min-width: 769px) {
@@ -102,6 +51,7 @@ main a:-webkit-any-link {
         background: #45050C;
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
+
 }
 
 @media (min-width: 1025px) { 
@@ -124,24 +74,4 @@ Style changes in media queries
         padding-left: 5px;
     }
 
-    .minecraft {
-        margin: 10px auto 0 auto;
-        border-radius: .2em;
-    }
-    .minecraft > div > a {
-        background-color: rgb(43, 42, 42);
-        box-shadow: 0 1px 14px rgba(0,0,0, .40);
-    }
-
-    .bedrock {
-        margin: 0 5px 10px 10px;
-    }
-
-    .java {
-        margin: 0 10px 10px 5px;
-    }
-
-    .minecraft > div > a > div {
-        display: block;
-    }
 }

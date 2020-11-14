@@ -8,8 +8,6 @@ of this page is showcase my skills as a web-developer through project showcases 
 
 ### Special Instructions
 - The functionality of blog page is currently limited. Posts do not save to a data base and are lost when the page reloads. I intend to work on this site feature in the future!
-- 
-
 
 ### Features:
 - Navigation menu that hides away in mobile view and is visible in desktop browser. The menu can be summoned in mobile by clicking the icon in the upper right corner of the page.

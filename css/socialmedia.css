@@ -53,7 +53,7 @@ main {
     text-align: left;
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
 main a:-webkit-any-link {
@@ -92,6 +92,59 @@ main a:-webkit-any-link {
     margin-bottom: 10px;
 } /* placed here again to over ride styling from main style.css */
 
+
+.minecraft a:-webkit-any-link {
+	color: rgb(160, 127, 98);
+} /* hotfix for the way that webkit was styling colored text nested in link  */
+
+.minecraft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(146, 150, 146);
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    color: rgb(27, 27, 26);
+    margin: 20px 0 0 0;
+}
+
+.minecraft > div > a > div > h2 {
+    margin: 24px 10px 10px 0;
+}
+
+.minecraft > h2 {
+    margin-bottom: 0;
+}
+.minecraft > p {
+    margin: 0 auto 20px auto;
+}
+
+.minecraft > div {
+    justify-content: space-between;
+}
+
+.minecraft > div > a {
+    border-radius: .2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.minecraft > div > a > div {
+    display: none;
+}
+
+.minecraft > div > .bedrock > img {
+    border-radius: 20px;
+}
+
+.minecraft > div > a > img {
+    margin: 10px;
+}
+
+.minecraft > div {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
 .smallsocial {
     display: flex;
     flex-direction: row;
@@ -167,6 +220,25 @@ main a:-webkit-any-link {
     main {
         padding: 0 10px;
     }
+
+    .minecraft > div {
+        flex-direction: column;
+    }
+
+    .minecraft > div > a > div {
+        display: block;
+    }
+
+    .minecraft > div > a {
+        background-color: rgb(43, 42, 42);
+        box-shadow: 0 1px 14px rgba(0,0,0, .40);
+        margin: 0 10px 20px 10px;
+    }
+
+    .minecraft > div > a > img {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media (min-width: 1025px) { 
@@ -186,6 +258,27 @@ Style changes in media queries
         padding-bottom: 25px;
         border-left: 5px solid #E9ECEF;
         padding-left: 5px;
+    }
+
+    .minecraft > div > a {
+        width: 49%;
+    }
+
+    .minecraft > div {
+        flex-direction: row;
+    }
+
+    .minecraft {
+        margin: 10px auto 0 auto;
+        border-radius: .2em;
+    }
+
+    .bedrock {
+        margin: 0 5px 10px 10px;
+    }
+
+    .java {
+        margin: 0 10px 10px 5px;
     }
 
 }
