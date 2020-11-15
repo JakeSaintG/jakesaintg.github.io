@@ -172,6 +172,10 @@ textarea {
         flex-direction: row;
     }
 
+    main {
+        padding: 10px 20px;
+    }
+
 }
 
 @media (min-width: 1025px) { 
