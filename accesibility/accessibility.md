@@ -3,7 +3,7 @@ Web Accessibility Compliance Checklist
 [x] Added Aria Roles were applicable
 [x] Used appropriate markup instead of DIVs were applicable
 [x] Used Spectrum Chrome Extension to ensure colorblind accessibility throughout entire site.
-[ ] > 90% score on accessibility through Lighthouse auditor 
+[x] > 90% score on accessibility through Lighthouse auditor. Screenshots included. 
 
 
 Web Content Accessibility Guidelines
