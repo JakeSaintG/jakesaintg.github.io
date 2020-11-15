@@ -43,7 +43,32 @@ a.activelink {
   Content Style
 ==================================== */
 
+.contact {
+    background: #45050C; 
+    color: #D5AC4E;
+    cursor: pointer;
+    text-align: center;
+    border-radius: .2em;
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
 
+main {
+    padding-top: 15px;
+}
+
+.sprite {
+    background: url(../imgs/socialspritesheet.png) no-repeat;
+    width: 180px; /* width of container */
+    height: 180px; /* height of container */
+}
+
+.linkedin > .sprite {
+    background-position: -410px -90px;
+    border-radius: .2em;
+    margin: 0 auto;
+}
 
 
 @media (min-width: 769px) {
@@ -52,6 +77,9 @@ a.activelink {
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
+    main {
+        padding: 15px 20px 10px 20px;
+    }
 }
 
 @media (min-width: 1025px) { 
@@ -59,7 +87,6 @@ a.activelink {
 /* ================================= 
 Style changes in media queries
 ==================================== */
-
 
     .other-nav a:hover,
     a.activelink {
@@ -72,6 +99,21 @@ Style changes in media queries
         padding-bottom: 25px;
         border-left: 5px solid #EECF6D;
         padding-left: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 15px 20px 10px 20px;
+    }
+
+    .contact {
+        flex: 1 0 45%;
+    }
+
+    .contact:nth-child(2n) {
+        margin-left: 20px;
     }
 
 }
