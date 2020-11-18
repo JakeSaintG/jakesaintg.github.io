@@ -19,7 +19,6 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -124,11 +123,12 @@ header {
 }
 
 .col {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	margin: 20px auto;
 	align-items: center;
 	text-align: center;
+	width: 100%;
 }
 
 .aboutMeBodyImg {
@@ -137,8 +137,22 @@ header {
 	width: 100px;
 }
 
+.aboutme {
+	margin-top: 10px;
+}
+
+
 .education {
-	margin-bottom: 20px;
+	margin: 0 auto 20px 0;
+}
+
+.goals {
+	margin: 20px auto 0 auto;
+}
+
+.listview {
+	padding-bottom: 16px;
+	line-height: 1.6;
 }
 
 .insp_icon {
@@ -165,11 +179,6 @@ header {
 	width: 160px;
 	height: 160px;
 }
-
-.insp_icon a:-webkit-any-link {
-	color: #E54B4B; 
-} /* hotfix for the way that webkit was styling colored text nested in link  */
-
 
 /* ================================= 
   Page Color Styles
@@ -228,6 +237,11 @@ a.activelink {
 	color: #FFA987;
 }
 
+.aboutme a:-webkit-any-link,
+.insp_icon a:-webkit-any-link {
+	color: #E54B4B;
+	text-decoration: underline;
+} /* hotfix for the way that webkit was styling colored text nested in link  */
 
 /* ================================= 
 Media Queries
@@ -363,15 +377,17 @@ Media Queries
 	}
 
 	.education {
-		margin: 0 10px 0 0;
+		margin: 0 20px 0 0;
 		box-shadow: 0 1px 14px rgba(0,0,0, .40);
 		border-radius: .2em;
+		flex: 1 0 48%;
 	}
 
 	.goals {
-		margin: 0 0 0 10px;
+		margin: 0 0 0 20px;
 		box-shadow: 0 1px 14px rgba(0,0,0, .40);
 		border-radius: .2em;
+		flex: 1 0 48%;
 	}
 
 	.aboutMeBodyImg {
@@ -381,11 +397,21 @@ Media Queries
 		width: 200px;
 	}
 
-	.inspirations {
+	.inspirations,
+	.awards {
 		flex-direction: column;
 		margin-right: auto;
 		margin-left: auto;
 		align-items: center;
+	}
+
+	.listview {
+		display: flex;
+		flex-direction: row;
+		padding: 0 16px 16px 16px;
+		width: 100%;
+		justify-content: space-around;
+		font-size: 17px;
 	}
 
 /* ================================= 

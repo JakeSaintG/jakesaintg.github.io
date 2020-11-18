@@ -43,16 +43,12 @@ a.activelink {
   Content Style
 ==================================== */
 
-main {
-    padding: 10px 0;
-}
-
 main a:-webkit-any-link {
 	color: black;
 } /* hotfix for the way that webkit was styling colored text nested in link  */
 
 .big {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     text-align: left;
     border-radius: .2em;
@@ -92,40 +88,12 @@ main a:-webkit-any-link {
     margin-bottom: 10px;
 } /* placed here again to over ride styling from main style.css */
 
-.smallsocial {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
 .smallsprite {
     display: inline-block;
     background: url(../imgs/socialspritesheet.png) no-repeat;
     min-width: 80px;
     height: 80px; 
 }
-
-/* .nurse > .smallsprite {
-    background-position: -10px -490px;
-}
-
-.dev > .smallsprite {
-    background-position: -180px -490px;
-}
-
-.twitter > .smallsprite {
-    background-position: -350px -490px;
-}
-
-.instagram > .smallsprite {
-    background-position: -520px -490px;
-}
-
-.small > h4 {
-    text-align: center;
-    margin: 0;
-} */
 
 @media (min-width: 769px) {
     .smallicon {
@@ -143,7 +111,11 @@ main a:-webkit-any-link {
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     main {
-        padding: 5px 20px;
+        padding: 0 20px;
+    }
+
+    .big {
+        margin: 20px auto;
     }
 }
 

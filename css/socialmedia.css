@@ -48,7 +48,7 @@ main {
 }
 
 .big {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     text-align: left;
     border-radius: .2em;
@@ -99,13 +99,13 @@ main a:-webkit-any-link {
 } /* hotfix for the way that webkit was styling colored text nested in link  */
 
 .minecraft {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     text-align: center;
     background-color: rgb(146, 150, 146);
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     color: rgb(27, 27, 26);
-    margin: 20px 0 0 0;
+    margin: 20px 0;
 }
 
 .minecraft > div > a > div > h2 {
@@ -219,7 +219,7 @@ main a:-webkit-any-link {
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
     main {
-        padding: 5px 20px;
+        padding: 0 20px;
     }
 
     .minecraft > div {
@@ -270,16 +270,13 @@ Style changes in media queries
     }
 
     .minecraft {
-        margin: 10px auto 0 auto;
+        margin: 20px auto;
         border-radius: .2em;
     }
 
-    .bedrock {
-        margin: 0 5px 10px 10px;
-    }
-
+    .bedrock,
     .java {
-        margin: 0 10px 10px 5px;
+        margin: 0 5px 10px 10px;
     }
 
 }
