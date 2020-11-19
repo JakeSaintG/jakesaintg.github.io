@@ -221,7 +221,7 @@ a.activelink {
     color: #FFA987;
     border-bottom: 3px solid #FFA987;
     padding-bottom: 7px;
-}
+} /* indicates which page the user is on by style changes */
 
 .aboutme,
 .education,
@@ -269,7 +269,7 @@ Media Queries
 	.christine,
 	.paige {
 		flex: 1 0 23%;
-	}
+	} /* moves insp to 4 across */
 
 	.other-nav {
 		background: #1E1E24;
@@ -351,7 +351,7 @@ Media Queries
 		right: 0;
 		bottom: 0;
 		height: 10%;
-	}
+	} /* allows for header to clear the space of the sidebar */
 
 	.col {
 		flex-direction: row;

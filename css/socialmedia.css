@@ -37,7 +37,7 @@ a.activelink {
     color: #E9ECEF;
     border-bottom: 3px solid #E9ECEF;
     padding-bottom: 7px;
-}
+} /* indicates which page the user is on by style changes */
 
 /* ================================= 
   Content Style
@@ -55,7 +55,7 @@ main {
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     margin: 20px auto;
-}
+} /* makes most items in stack */
 
 main a:-webkit-any-link {
 	color: #212529;
@@ -220,7 +220,7 @@ main a:-webkit-any-link {
         margin: 20px auto;
         flex-direction: row;
         text-align: left;
-    }
+    } /* makes most items in rows */
 
     .head {
         text-align: center;
@@ -274,7 +274,7 @@ Style changes in media queries
         float: left;
         margin-right: 28px;
         margin-bottom: 20px;
-    }
+    } /* moves head text and wraps test around it */
 
     text p {
         margin: 16px auto;

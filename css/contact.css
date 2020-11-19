@@ -37,7 +37,7 @@ a.activelink {
     color: #EECF6D;
     border-bottom: 3px solid #EECF6D;
     padding-bottom: 7px;
-}
+} /* indicates which page the user is on by style changes */
 
 /* ================================= 
   Content Style

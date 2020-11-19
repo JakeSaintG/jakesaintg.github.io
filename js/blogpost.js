@@ -20,7 +20,7 @@ if (post == "") {
 
 let today = new Date(); // "new" operator prevents the date from being a string 
 let d = today.getDate();
-let m = today.getMonth()+1; //return the month starting at 0, +1 is used to simulate returning the month starting at 1.
+let m = today.getMonth()+1; //will return the month starting at 0, +1 is used to simulate returning the month starting at 1.
 let y = today.getFullYear();
 
 if(d<10) 
@@ -30,10 +30,10 @@ if(d<10)
 
 if(m<10) 
 {
-    m='0'+m;
+    m='0'+m; //adds a zero to the month if it is a single digit
 } 
 
-today = `${m}/${d}/${y}`;
+today = `${m}/${d}/${y}`; //formats the post date
 
 document.getElementById("post").innerHTML = `<article class="post_full">
 <div class="post_head">

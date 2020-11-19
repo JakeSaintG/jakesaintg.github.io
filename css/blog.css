@@ -37,7 +37,7 @@ a.activelink {
     color: #F1F7F9;
     border-bottom: 3px solid #F1F7F9;
     padding-bottom: 7px;
-}
+} /* indicates which page the user is on by style changes */
 
 .post_head,
 .form_head {

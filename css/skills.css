@@ -147,4 +147,9 @@ Style changes in media queries
         padding-left: 5px;
     }
 
+    .head {
+        float: left;
+        margin-right: 28px;
+        margin-bottom: 20px;
+    } /* moves head text and wraps test around it */
 }
