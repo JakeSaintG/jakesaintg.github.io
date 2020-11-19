@@ -49,8 +49,9 @@ main a:-webkit-any-link {
 
 .big {
     display: inline-flex;
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     margin: 20px auto;
@@ -58,8 +59,9 @@ main a:-webkit-any-link {
 
 .sprite {
     background: url(../imgs/socialspritesheet.png) no-repeat;
-    min-width: 180px; /* width of container */
+    width: 180px; /* width of container */
     height: 180px; /* height of container */
+    margin: 10px auto 0 auto;
 }
 
 .nurse > .sprite {
@@ -82,12 +84,6 @@ main a:-webkit-any-link {
     margin: 0 10px;
 } /* placed here again to over ride styling from main style.css */
 
-.head {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 10px;
-} /* placed here again to over ride styling from main style.css */
-
 .smallsprite {
     display: inline-block;
     background: url(../imgs/socialspritesheet.png) no-repeat;
@@ -100,11 +96,7 @@ main a:-webkit-any-link {
         width: 180px; 
         height: 180px; 
     }
-    .head {
-        float: left;
-        margin-right: 28px;
-        margin-bottom: 20px;
-    }
+
     .other-nav {
         background: #22577A;
         z-index: 10;
@@ -114,8 +106,24 @@ main a:-webkit-any-link {
         padding: 0 20px;
     }
 
+    .sprite {
+        min-width: 180px;
+        margin: 0;
+    }
+
     .big {
         margin: 20px auto;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .head {
+        text-align: center;
+        margin: 20px auto 10px auto;
+    }
+
+    p {
+        margin: 10px auto;
     }
 }
 

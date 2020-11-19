@@ -49,12 +49,12 @@ main {
 
 .big {
     display: inline-flex;
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
-    margin: 20px 0;
-    width: 100%;
+    margin: 20px auto;
 }
 
 main a:-webkit-any-link {
@@ -63,9 +63,9 @@ main a:-webkit-any-link {
 
 .sprite {
     background: url(../imgs/socialspritesheet.png) no-repeat;
-    min-width: 180px; /* width of container */
+    width: 180px; /* width of container */
     height: 180px; /* height of container */
-    margin: 5px;
+    margin: 10px auto 0 auto;
 }
 
 .tiktok > .sprite {
@@ -87,13 +87,6 @@ main a:-webkit-any-link {
     display: inline-block;
     margin: 0 10px;
 } /* placed here again to over ride styling from main style.css */
-
-.head {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 10px;
-} /* placed here again to over ride styling from main style.css */
-
 
 .minecraft a:-webkit-any-link {
 	color: rgb(160, 127, 98);
@@ -208,11 +201,6 @@ main a:-webkit-any-link {
         width: 180px; 
         height: 180px; 
     }
-    .head {
-        float: left;
-        margin-right: 28px;
-        margin-bottom: 20px; 
-    }
     
     .other-nav {
         background: #212529;
@@ -221,6 +209,26 @@ main a:-webkit-any-link {
 
     main {
         padding: 0 20px;
+    }
+
+    .sprite {
+        min-width: 180px;
+        margin: 5px;
+    }
+
+    .big {
+        margin: 20px auto;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .head {
+        text-align: center;
+        margin: 20px auto 10px auto;
+    }
+
+    text p {
+        margin: 10px auto;
     }
 
     .minecraft > div {
@@ -260,6 +268,16 @@ Style changes in media queries
         padding-bottom: 25px;
         border-left: 5px solid #E9ECEF;
         padding-left: 5px;
+    }
+
+    .head {
+        float: left;
+        margin-right: 28px;
+        margin-bottom: 20px;
+    }
+
+    text p {
+        margin: 16px auto;
     }
 
     .minecraft > div > a {
