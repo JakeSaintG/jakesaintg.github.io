@@ -5,7 +5,9 @@
 /* -------------------- General Style Changes -------------------- */
 
 * {
-	box-sizing: border-box;
+	box-sizing: border-box; /*IE*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome*/
+    -moz-box-sizing: border-box;    /*Firefox*/
 }
 
 body {
@@ -237,11 +239,13 @@ a.activelink {
 	color: #FFA987;
 }
 
-.aboutme a:-webkit-any-link,
-.insp_icon a:-webkit-any-link {
+.aboutme a:link,
+.aboutme a:visited,
+.insp_icon a:link ,
+.insp_icon a:visited {
 	color: #E54B4B;
 	text-decoration: underline;
-} /* hotfix for the way that webkit was styling colored text nested in link  */
+}
 
 /* ================================= 
 Media Queries

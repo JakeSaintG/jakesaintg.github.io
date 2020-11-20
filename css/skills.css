@@ -43,7 +43,8 @@ a.activelink {
   Content Style
 ==================================== */
 
-main a:-webkit-any-link {
+main a:visited,
+main a:link {
 	color: black;
 } /* hotfix for the way that webkit was styling colored text nested in link  */
 

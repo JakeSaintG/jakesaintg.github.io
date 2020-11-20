@@ -57,7 +57,8 @@ main {
     margin: 20px auto;
 } /* makes most items in stack */
 
-main a:-webkit-any-link {
+main a:visited,
+main a:link {
 	color: #212529;
 } /* hotfix for the way that webkit was styling colored text nested in link  */
 
@@ -88,9 +89,13 @@ main a:-webkit-any-link {
     margin: 0 10px;
 } /* placed here again to over ride styling from main style.css */
 
-.minecraft a:-webkit-any-link {
-	color: rgb(160, 127, 98);
-} /* hotfix for the way that webkit was styling colored text nested in link  */
+
+
+.minecraft a:visited,
+.minecraft a:link {
+    color: rgb(160, 127, 98);
+}
+/* hotfix for the way that webkit was styling colored text nested in link  */
 
 .minecraft {
     display: inline-flex;
