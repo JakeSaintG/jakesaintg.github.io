@@ -88,13 +88,24 @@ main {
     background: #00296B;
     color: #FFD500;
     border: 3px solid #FFD500;
-    
 }
 
 .gh {
     background-color: #00509D;
     color: #FFD500;
     border: 3px solid #FFD500;
+}
+
+.links > .soloprog {
+    width: 100%;
+    background: #00296B;
+    color: #FFD500;
+    border: 3px solid #FFD500;
+    padding: 15px;
+    border-radius: .2em;
+    box-shadow: 0 1px 14px rgba(0,0,0, .40);
+    font-weight: bolder;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
