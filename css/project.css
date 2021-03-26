@@ -48,9 +48,16 @@ main {
 }
 
 .box {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.projectDescription {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 25px;
 }
 
 .projects {
@@ -62,6 +69,10 @@ main {
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
     display: flex;
     flex-direction: column;
+}
+
+.favorite {
+    box-shadow: 0 1px 14px #FFD500
 }
 
 .entry {
@@ -77,7 +88,9 @@ main {
 }
 
 .goto,
-.gh {
+.gh,
+.ghFavorite,
+.gotoFavorite {
     padding: 15px;
     border-radius: .2em;
     box-shadow: 0 1px 14px rgba(0,0,0, .40);
@@ -94,6 +107,18 @@ main {
     background-color: #00509D;
     color: #FFD500;
     border: 3px solid #FFD500;
+}
+
+.gotoFavorite {
+    background: #FFD500;
+    color: #00296B;
+    border: 3px solid #00296B;
+}
+
+.ghFavorite {
+    background-color: #FFD500;
+    color: #00509D;
+    border: 3px solid #00509D;
 }
 
 .links > .soloprog {
@@ -114,29 +139,32 @@ main {
         z-index: 10;
     }  /* moves other-nav up to same z-index as mobile-nav and recolors it to match */
 
-    .box {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 20px 0 10px 0;
-    }
-
     .projects {
         flex: 1 0 32%; 
-        max-width: 32%;
         margin-right: 5px;
         margin-left: 5px;
+    }
+
+    .box {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px 0 10px 0;
     }
 }
 
 @media (min-width: 1025px) {
     .projects {
-        min-width: 308px;
-        max-width: 32%;
-        flex: 1 0 23%;
-        
+        flex: 1 0 23%; 
+    }
+
+}
+
+@media (min-width: 1254px) {
+    .box {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 0 10px 0;
     }
 }
+
 
 @media (max-width: 1254px) {
     .projects {

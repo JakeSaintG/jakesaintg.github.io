@@ -58,6 +58,28 @@ main a:link {
     margin: 20px auto;
 }
 
+.text > h2 {
+    margin-top: 10px;
+}
+
+#treehouseData {
+    width: 100%;
+}
+
+.treehouse {
+    width: 100%;
+}
+
+.courseData {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px
+}
+
+.courseDataHead {
+    margin-bottom: 10px
+}
+
 .sprite {
     background: url(../imgs/socialspritesheet.png) no-repeat;
     width: 180px; /* width of container */
@@ -72,6 +94,11 @@ main a:link {
 
 .dev > .sprite {
     background-position: -810px -290px;
+    border-radius: .2em 0 0 .2em;
+}
+
+.treehouse > .sprite {
+    background-position: -610px -90px;
     border-radius: .2em 0 0 .2em;
 }
 
@@ -116,6 +143,24 @@ main a:link {
         margin: 20px auto;
         flex-direction: row;
         text-align: left;
+    }
+
+    .treehouse > .text {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .text > h2 {
+        margin: 20px 28px 10px 0;
+    }
+
+    .treehouse > .text > h2 {
+        margin: 20px auto 20px 0;
+    }
+
+    .treehouse {
+       justify-content: left;
     }
 
     .head {

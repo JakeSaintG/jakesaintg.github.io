@@ -33,7 +33,9 @@ if(m<10) {
 } 
 today = `${m}/${d}/${y}`; //formats the post date
 
-document.getElementById("post").innerHTML = `<article class="post_full">
+const postContent = document.createElement("div")
+
+postContent.innerHTML = `<article class="post_full">
 <div class="post_head">
     <h1 class="post_title">${title.value}</h1>
     <div class="post_details">
@@ -43,6 +45,8 @@ document.getElementById("post").innerHTML = `<article class="post_full">
 </div>
 <p class="post_content">${post.value} </p>
 </article>`
+
+document.getElementById("post").appendChild(postContent)
 
 title.value = '';
 author.value = '';
