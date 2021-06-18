@@ -92,8 +92,13 @@ main a:link {
     border-radius: .2em 0 0 .2em;
 }
 
-.dev > .sprite {
+.frontEnd > .sprite {
     background-position: -810px -290px;
+    border-radius: .2em 0 0 .2em;
+}
+
+.cSharp > .sprite {
+    background-position: -810px -90px;
     border-radius: .2em 0 0 .2em;
 }
 
