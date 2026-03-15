@@ -1,6 +1,6 @@
 import styles from './Experience.module.css';
 import { work } from '../ExperienceSection'
-import { MouseEvent } from 'react';
+import { MouseEvent, useRef } from 'react';
 
 interface Props extends React.HTMLAttributes<HTMLElement>{
     visualMode: string
@@ -11,7 +11,7 @@ interface Props extends React.HTMLAttributes<HTMLElement>{
 }
 
 export default function Experience(props: Props) {
-    let key = 0;
+    const refKey = useRef(0);
 
     return (
         <div>
@@ -21,7 +21,7 @@ export default function Experience(props: Props) {
             <div className={styles.experience_list}>
                 {props.workExperience.map((work: work) =>
                     <button 
-                        key={key++}
+                        key={refKey.current++}
                         className={`${styles[props.visualMode]} ${props.activeClass === work.id ? `${styles.selected_profession} ${styles[props.visualMode]}` : `${styles.profession}`}`}
                         id={work.id}
                         onClick={props.setWorkExperience}

@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import styles from './BlogPreview.module.css';
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
@@ -20,7 +21,7 @@ export default function BlogPreview(props: Props) {
     const postDate = new Date(
         parseInt(props.blog.publish_date) * 1000
     ).toLocaleDateString();
-    let key = 0;
+    const refKey = useRef(0);
     let tags = props.blog.tags;
 
     if (tags.length >= 6) tags = tags.slice(0, 6);
@@ -34,7 +35,7 @@ export default function BlogPreview(props: Props) {
             <p>{postDate}</p>
             <div className={styles.tags}>
                 {tags.map((tag) => (
-                    <p key={key++}>{tag}</p>
+                    <p key={refKey.current++}>{tag}</p>
                 ))}
             </div>
         </div>

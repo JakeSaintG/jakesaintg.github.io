@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './BlogSection.module.css';
 import { PageSection } from '../General/PageSection';
 import blogs from '../../assets/blogs.json';
@@ -21,7 +21,7 @@ const blogPreviews = blogs.reduce((acc, proj) => {
 
 export function BlogSection(props: Props) {
     const { visualMode } = props;
-    let key = 0;
+    const refKey = useRef(0);
 
     const [isBlogDisplayed, setIsBlogDisplayed] = useState(false);
     const [displayedBlogId, setDisplayedBlogId] = useState('');
@@ -72,7 +72,7 @@ export function BlogSection(props: Props) {
                             <BlogPreview
                             visualMode={props.visualMode}
                             displayBlog={toggleIsBlogDisplayed}
-                            key={key++}
+                            key={refKey.current++}
                             blog={b}
                             ></BlogPreview>
                         ))}

@@ -3,7 +3,7 @@ import { PageSection } from '../General/PageSection';
 import projects from '../../assets/projects.json'
 import Project from './Project/Project';
 import { project } from './Project/Project';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 interface Props extends React.HTMLAttributes<HTMLElement>{
     visualMode: string
@@ -14,7 +14,7 @@ const contentStyle: React.CSSProperties = { display: 'flex', flexDirection: 'col
 let displayedProjects: project[] = [];
 
 export function ProjectsSection(props: Props) {
-    let key = 0;
+    const refKey = useRef(0);
 
     const [allProjectsShown, setAllProjectsShown] = useState(false);
 
@@ -40,7 +40,7 @@ export function ProjectsSection(props: Props) {
             </span>
             <div className={`${styles.projects} ${styles[props.visualMode]}`}>
                 {displayedProjects.map((proj: project) =>
-                    <Project visualMode={props.visualMode} key={key++} project={proj}/>
+                    <Project visualMode={props.visualMode} key={refKey.current++} project={proj}/>
                 )}
             </div>
         </PageSection>

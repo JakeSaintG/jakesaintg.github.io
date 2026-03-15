@@ -15,6 +15,7 @@ import rustImg from '../../../../public/assets/img/lang_icons/rust.png';
 import sqlImg from '../../../../public/assets/img/lang_icons/sql.png';
 import denoImg from '../../../../public/assets/img/lang_icons/deno.png';
 import nodeJsImg from '../../../../public/assets/img/lang_icons/nodejs.png';
+import { useRef } from 'react';
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
     visualMode: string;
@@ -46,7 +47,7 @@ const langs: Record<string, string> = {
 }
 
 export default function Project(props: Props) {
-    let key = 0;
+    const refKey = useRef(0);
     let hosted = null;
 
     if (props.project.hosted) {
@@ -71,7 +72,7 @@ export default function Project(props: Props) {
                 <p>{props.project.description}</p>
                 <span>
                     {props.project.technologies.map((t) => {
-                        return <img key={key++} src={langs[t]} alt={`Icon for ${t}`} />;
+                        return <img key={refKey.current++} src={langs[t]} alt={`Icon for ${t}`} />;
                     })}
                 </span>
             </div>
