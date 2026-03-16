@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './ContactFooter.module.css';
-import { faBluesky, faDiscord, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faBluesky, faDiscord, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export function ContactFooter() {
@@ -17,6 +17,9 @@ export function ContactFooter() {
                     </a>
                     <a href="https://discordapp.com/users/231257566418698251" aria-label="Opens in new tab; Link out to Discord add-friend page." target="#">
                         <FontAwesomeIcon icon={faDiscord} size="lg" aria-hidden="true"/>
+                    </a>
+                    <a href="https://www.youtube.com/@jakesaintg" aria-label="Opens in new tab; Link out to Jake's YouTube profile." target="#">
+                        <FontAwesomeIcon icon={faYoutube} size="lg" aria-hidden="true"/>
                     </a>
                 </div>
             </div>
