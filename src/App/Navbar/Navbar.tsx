@@ -40,15 +40,15 @@ export function Navbar(props: Props) {
                 </a>
 
                 <div className={styles.menu}>
-                    <a href="https://www.linkedin.com/in/jake-st-germain/" target='#' aria-label="New tab; Link to out Jake's Linkedin page." title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jake-st-germain/" target='#' aria-label="Open in a new tab; link to Jake's LinkedIn profile." title="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedinIn} size="lg" aria-hidden="true" />
                     </a>
 
-                    <a href="https://github.com/JakeSaintG" target='#' aria-label="New tab; Link to out Jake's GitHub page." title="JakeSaintG's Github">
+                    <a href="https://github.com/JakeSaintG" target='#' aria-label="Open in a new tab; link to Jake's GitHub profile." title="JakeSaintG's GitHub">
                         <FontAwesomeIcon icon={faGithub} size="lg" aria-hidden="true" />
                     </a>
 
-                    <a href="https://drive.google.com/file/d/1oTgpw-CbrPvcXfwaFURmpyRsGLjjSKMI/view" target='#' aria-label="New tab; Link to out Jake's resume in PDF form." title="JakeSaintG's Resume">
+                    <a href="https://drive.google.com/file/d/1oTgpw-CbrPvcXfwaFURmpyRsGLjjSKMI/view" target='#' aria-label="Open in a new tab; link to Jake's resume in PDF form." title="JakeSaintG's Resume">
                         <FontAwesomeIcon icon={faFile} size="lg" aria-hidden="true" />
                     </a>
 

@@ -3,7 +3,7 @@
         "name": "PokéUtils",
         "hosted": "https://jakesaintg.github.io/PokeUtils/",
         "repo_link": "https://github.com/JakeSaintG/PokeUtils",
-        "description": "An Angular application that uses the Cashmere libary. PokéUtils leverages PokéAPI to provide tools that will enchance a user's journey into the world of Pokémon! ",
+        "description": "An Angular application that uses the Cashmere library. PokéUtils leverages PokéAPI to provide tools that will enhance a user's journey into the world of Pokémon!",
         "technologies": ["angular", "nodejs"],
         "favorite": true,
         "eductional": false
@@ -21,7 +21,7 @@
         "name": "SpotBot",
         "hosted": null,
         "repo_link": "https://github.com/JakeSaintG/SpotBot",
-        "description": "A Discord Bot for general use that has extra functionality for Pokèmon GO themed Discord servers.",
+        "description": "A Discord bot for general use that has extra functionality for Pokémon GO-themed Discord servers.",
         "technologies": ["typescript", "deno"],
         "favorite": true,
         "eductional": false
