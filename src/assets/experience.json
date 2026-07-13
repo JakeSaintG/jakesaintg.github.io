@@ -10,6 +10,7 @@
             "Created multiple ADO deployment pipelines for building production applications, querying client systems, interfacing with Databricks, and much more! I was known for \"bending ADO pipelines to my will\".",
             "Designed and maintained multiple Azure Data Factory and serverless Azure Function solutions for data movement.",
             "Built solutions for interoperability between proprietary applications and external systems.",
+            "Piloted a proof of concept for a revamp of data pipelines using modern Databricks architecture.",
             "Chaired the company's Open Space Committee that was focused on improvement by leading monthly learning sessions."
         ]
     },
@@ -21,6 +22,7 @@
             "Led development students through thought-provoking exercises centered around problem solving skills.",
             "Gave constructive criticism during code review and guided students toward solutions.",
             "Created a large handful of learning materials for class exercises as well as individual practice.",
+            "Arranged development team scenarios and exercises for students that reflect the day-to-day life of a developer.",
             "Focused on helping students think through their problems. Once they could word what they wanted to do, often times their code would quickly fall into place!"
         ]
     },
@@ -30,7 +32,8 @@
         "current": true,
         "contributions": [
             "Committed to daily, meaningful contributions to personal code projects or daily meaningful time working on Blender art.",
-            "I am currently working on the PokéDex App Project! For more information, please see my blog below."
+            "I am currently working on the PokéDex App Project! For more information, please see my blog below.",
+            "I also do some amature carpentry, laser engraving, and 3D printing! I have solved many odd problems in my life by modeling something or putting together useful tools out of scrap wood."
         ]
     },
     {
@@ -55,10 +58,10 @@
         "id": "dev-intern",
         "current": false,
         "contributions": [
-            "Updated a large production application from Angular 10 to Angular 12 in a timely manner.",
+            "Updated, maintained, and developed a large production full stack application.",
             "Implemented a quality-of-life update by adding a REST API endpoint to return information on previously added sets of data.",
             "Gained experience working in Azure DevOps, Snowflake Data Cloud, and Azure services.",
-            "large scale software deployment 'ring-style'",
+            "Designed and built a large scale software deployment system using client \"rings\" to streamline the update process.",
             "Collaborated with a team of software engineers by pairing on projects, reviewing code, and working through solutions to difficult healthcare-related problems"
         ]
     },

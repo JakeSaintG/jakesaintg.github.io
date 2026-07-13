@@ -48,7 +48,7 @@ export function Navbar(props: Props) {
                         <FontAwesomeIcon icon={faGithub} size="lg" aria-hidden="true" />
                     </a>
 
-                    <a href="https://drive.google.com/file/d/1oTgpw-CbrPvcXfwaFURmpyRsGLjjSKMI/view" target='#' aria-label="Open in a new tab; link to Jake's resume in PDF form." title="JakeSaintG's Resume">
+                    <a href="https://drive.google.com/file/d/1BH_7fD72Ia6cMJoaIx_LQQZS28A_ht-E/view" target='#' aria-label="Open in a new tab; link to Jake's resume in PDF form." title="JakeSaintG's Resume">
                         <FontAwesomeIcon icon={faFile} size="lg" aria-hidden="true" />
                     </a>
 

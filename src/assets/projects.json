@@ -1,5 +1,14 @@
 [
     {
+        "name": "PokéDex App Project",
+        "hosted": "https://jakesaintg.github.io/PokedexAppProject/",
+        "repo_link": "https://github.com/JakeSaintG/PokedexAppProject",
+        "description": "My current big project! I am learning app development by developing the same application in all of the major frameworks and languages. I am currently working through the react POC and will soon be moving on to react native.",
+        "technologies": ["react", "nodejs"],
+        "favorite": true,
+        "eductional": false
+    },
+    {
         "name": "PokéUtils",
         "hosted": "https://jakesaintg.github.io/PokeUtils/",
         "repo_link": "https://github.com/JakeSaintG/PokeUtils",
@@ -14,6 +23,15 @@
         "repo_link": "https://github.com/JakeSaintG/CodeYouSqlPractice",
         "description": "An educational project for teaching my students the basic concepts of SQL.",
         "technologies": ["sql"],
+        "favorite": true,
+        "eductional": true
+    },
+    {
+        "name": "Code:You Web Demo API",
+        "hosted": null,
+        "repo_link": "https://github.com/JakeSaintG/CodeYouWebDemoApi",
+        "description": "An backend for teaching development students how to use and develop REST APIs using Express.",
+        "technologies": ["typescript", "html", "nodejs"],
         "favorite": true,
         "eductional": true
     },
@@ -34,15 +52,6 @@
         "technologies": ["csharp"],
         "favorite": false,
         "eductional": false
-    },
-    {
-        "name": "Code:You Web Demo API",
-        "hosted": null,
-        "repo_link": "https://github.com/JakeSaintG/CodeYouWebDemoApi",
-        "description": "An over-engineered backend for teaching development students how to use and develop REST APIs using Express.",
-        "technologies": ["typescript", "html", "nodejs"],
-        "favorite": true,
-        "eductional": true
     },
     {
         "name": "Code Katas",

@@ -6,6 +6,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 // Icon imports (eww I hate all the ../)
 import cSharpImg from '../../../../public/assets/img/lang_icons/csharp.png';
 import angularImg from '../../../../public/assets/img/lang_icons/angular.png';
+import reactImg from '../../../../public/assets/img/lang_icons/react.png';
 import htmlImg from '../../../../public/assets/img/lang_icons/html.png';
 import javascriptImg from '../../../../public/assets/img/lang_icons/javascript.png';
 import typescriptImg from '../../../../public/assets/img/lang_icons/typescript.png';
@@ -38,6 +39,7 @@ const langs: Record<string, string> = {
     typescript: typescriptImg,
     html: htmlImg,
     angular: angularImg,
+    react: reactImg,
     sql: sqlImg,
     powershell: powershellImg,
     dart: dartImg,

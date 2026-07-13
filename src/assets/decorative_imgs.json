@@ -16,10 +16,6 @@
         "alt_text": ""
     },
     {
-        "img_location": "snow.jpg",
-        "alt_text": ""
-    },
-    {
         "img_location": "pacu.jpg",
         "alt_text": ""
     },
@@ -29,6 +25,10 @@
     },
     {
         "img_location": "sydney_pride.jpg",
+        "alt_text": ""
+    },
+    {
+        "img_location": "snow.jpg",
         "alt_text": ""
     }
 ]
