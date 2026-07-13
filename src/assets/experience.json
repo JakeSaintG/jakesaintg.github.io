@@ -6,9 +6,8 @@
         "contributions": [
             "Developed and maintained both client-facing and internal tools.",
             "Contributed to company's open source Angular component library.",
-            "databricks stuff",
             "Developed multiple Python libraries that were used by processes with in Databricks.",
-            "Created multiple ADO deployment pipeline for building production applications, querying client systems, interfacing with Databricks, and much more! I was known for \"bending ADO pipelines to my will\".",
+            "Created multiple ADO deployment pipelines for building production applications, querying client systems, interfacing with Databricks, and much more! I was known for \"bending ADO pipelines to my will\".",
             "Designed and maintained multiple Azure Data Factory and serverless Azure Function solutions for data movement.",
             "Built solutions for interoperability between proprietary applications and external systems.",
             "Chaired the company's Open Space Committee that was focused on improvement by leading monthly learning sessions."
@@ -22,7 +21,7 @@
             "Led development students through thought-provoking exercises centered around problem solving skills.",
             "Gave constructive criticism during code review and guided students toward solutions.",
             "Created a large handful of learning materials for class exercises as well as individual practice.",
-            "Focused helping students think through their problems. Once they could word what they wanted to do, often times their code would quickly fall into place!"
+            "Focused on helping students think through their problems. Once they could word what they wanted to do, often times their code would quickly fall into place!"
         ]
     },
     {
