@@ -19,9 +19,9 @@
         "id": "mentor",
         "current": true,
         "contributions": [
-            "Lead development students through thought-provoking exercises centered around problem solving skills.",
-            "Gave constructive critism during code review and guided students toward solutions.",
-            "Created additional a large handful of learning materials for class exercises as well as individual practice.",
+            "Led development students through thought-provoking exercises centered around problem solving skills.",
+            "Gave constructive criticism during code review and guided students toward solutions.",
+            "Created a large handful of learning materials for class exercises as well as individual practice.",
             "Focused helping students think through their problems. Once they could word what they wanted to do, often times their code would quickly fall into place!"
         ]
     },
@@ -30,7 +30,6 @@
         "id": "personal",
         "current": true,
         "contributions": [
-            "Committed to daily Spanish language training through Babel and Doulingo.",
             "Committed to daily, MEANINGFUL commits/contribution to personal code projects OR daily meaningful time working on Blender art.",
             "I am currently working on the PokéDex App project! For more information, please see my blog below."
         ]
