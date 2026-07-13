@@ -1,5 +1,5 @@
 # BACK AT IT!
-May 1 2025
+(Part of the Pokedex App Project Blogging that I'm treating more like live journaling.)
 
 Is this one of those rare projects that a developer gets back to? ABSOLUTELY!
 

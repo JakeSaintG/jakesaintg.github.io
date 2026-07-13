@@ -1,5 +1,5 @@
 ## Pokédex App Project Continued
-In summary, I am re-creating the same Pokédex Application in a handful off mobile development platforms.
+In summary, I am re-creating the same Pokédex Application in a handful off mobile development platforms. This is part of the Pokedex App Project Blogging that I'm treating more like live journaling.
 
 ## Where to start?
 Well, thinking back to the requirements that I set for myself, I need it work offline, communicate with PokéAPI, and store data locally. Sounds easy enough...but I also need to design the app, set functionality requirements, think through data storage, plan out testing, deal with some unforeseen issues, and spiral into a sobbing mess at the amount of work ahead...
@@ -29,9 +29,6 @@ So... I'll need:
 
 
 ## The POC
-===== WIP =======
-I will eventually use a WASM solution for Postgre in the browser. For now, though, I’m doing a POC in a separate node app app that will save the data to a SQLite DB
-
-App - utilize technology specific solutions when I get to things like Flutter 
+I will eventually use a WASM solution for Postgre in the browser. For now, though, I’m doing a POC in a separate node app app that will save the data to a SQLite DB. When I get to each app, I'll utilize technology specific solutions based on convention for each language/framework. 
 
 So…why don't I just do this once and package the data with the data with the app? Well, I will! I will likely include the first 151 pokemon with the app. After that, I want the app to be relatively self-sufficient and routinely keep the data up-to-date with minimal involvement from me. The pokemon franchise moves quick! (Feels like a lot of work for a learning exercise…)
