@@ -16,13 +16,11 @@ export function Navbar(props: Props) {
     const [navContentVisible, setNavContentVisible] = useState(false);
 
     let toggled = "";
-    if (navContentVisible) {
-        toggled = styles.toggled;
-    }
+    if (navContentVisible) toggled = styles.toggled;
 
     return (
         <nav className={styles[props.visualMode]}>
-            <div className={styles.nav_logo}>Logo</div>
+            {/* <div className={styles.nav_logo}>Logo</div> */}
 
             <div className={`${styles.nested_nav} ${toggled}`}>
 
@@ -48,7 +46,7 @@ export function Navbar(props: Props) {
                         <FontAwesomeIcon icon={faGithub} size="lg" aria-hidden="true" />
                     </a>
 
-                    <a href="https://drive.google.com/file/d/1BH_7fD72Ia6cMJoaIx_LQQZS28A_ht-E/view" target='#' aria-label="Open in a new tab; link to Jake's resume in PDF form." title="JakeSaintG's Resume">
+                    <a href="https://drive.google.com/file/d/1aMuESseTSOwsE_24QkDJAfaGVIClx7Dc/view" target='#' aria-label="Open in a new tab; link to Jake's resume in PDF form." title="JakeSaintG's Resume">
                         <FontAwesomeIcon icon={faFile} size="lg" aria-hidden="true" />
                     </a>
 
