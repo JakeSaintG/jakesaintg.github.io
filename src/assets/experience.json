@@ -4,14 +4,15 @@
         "id": "dev-fulltime",
         "current": true,
         "contributions": [
-            "Developed and maintained both client-facing and internal tools.",
-            "Contributed to company's open source Angular component library.",
-            "Developed multiple Python libraries that were used by processes with in Databricks.",
-            "Created multiple ADO deployment pipelines for building production applications, querying client systems, interfacing with Databricks, and much more! I was known for \"bending ADO pipelines to my will\".",
-            "Designed and maintained multiple Azure Data Factory and serverless Azure Function solutions for data movement.",
-            "Built solutions for interoperability between proprietary applications and external systems.",
+            "Organized and prioritized team work while serving as interim Product Manager.",
+            "Chaired the Open Space Committee which was focused on improvement by leading monthly learning sessions.",
+            "Designed and built solutions for interoperability between proprietary applications and external systems.",
+            "Developed, maintained, and deployed productized Python libraries for use in Databricks.",
+            "Constructed Azure Data Factory and serverless Azure Function solutions (C#) for data movement and monitoring.",
+            "Created pipelines for deploying applications, querying client systems, interfacing with Databricks, and repairing software.",
             "Piloted a proof of concept for a revamp of data pipelines using modern Databricks architecture.",
-            "Chaired the company's Open Space Committee that was focused on improvement by leading monthly learning sessions."
+            "Collaborated with multiple other teams on a routine basis to complete complex tasks.",
+            "Communicated key project milestones to leadership and stakeholders through presentations and live demonstrations."
         ]
     },
     {
@@ -19,11 +20,11 @@
         "id": "mentor",
         "current": true,
         "contributions": [
-            "Led development students through thought-provoking exercises centered around problem solving skills.",
-            "Gave constructive criticism during code review and guided students toward solutions.",
-            "Created a large handful of learning materials for class exercises as well as individual practice.",
-            "Arranged development team scenarios and exercises for students that reflect the day-to-day life of a developer.",
-            "Focused on helping students think through their problems. Once they could word what they wanted to do, often times their code would quickly fall into place!"
+            "Provided weekly technical coaching, guidance, and mentorship to classes of 25 students, focusing on problem-solving skills, technical proficiency, and professional development through hands-on software engineering exercises.",
+            "Assisted in the development and implementation of curricula aligning with real-world software development team scenarios.",
+            "Focused on creating an inclusive learning environment for students to develop their skills and pursue their career goals.",
+            "Ensured students remained on track to meet project goals, objectives, and timelines.",
+            "Organized code reviews providing constructive feedback focused on industry best practices, quality standards, continuous improvement, and guiding them to solutions without outright solving problems for them."
         ]
     },
     {
@@ -41,16 +42,12 @@
         "id": "nurse",
         "current": false,
         "contributions": [
-            "Sought additional training certifications in Pediatric Advanced Life Support (PALS) as well as training in PRISMA.",
-            "Managed life support equipment and worked with multidisciplinary teammates to deliver compassionate care for families and critically ill patients with debilitating conditions or injuries.",
-            "Assessed conditions, symptoms, diagnostic tests, and behaviors of pediatric patients to monitor for life-altering changes, responded using quick critical thinking skills, and worked well with multi-disciplinary teams.",
+            "Delivered compassionate care for critically ill patients with debilitating conditions or injuries while also attending to the needs of their families during some of the hardest times of their lives.",
+            "Managed complicated life support equipment and sought additional training certifications in Pediatric Advanced Life Support (PALS) as well as training in PRISMA with the goal of providing the best possible care to my patients.",
+            "Assessed conditions, symptoms, diagnostic tests, and behaviors of pediatric patients to monitor for life-altering changes. Responded using quick critical thinking skills, and worked well with multi-disciplinary teams.",
             "Responded to rapid changes in patient condition, worked well under pressure, and exercised excellent time management skills with multiple patient assignments.",
             "Lead a Council of my peers to innovate and improve nursing practice.",
-            "Twice nominated for Hospital-Wide Nurse of the Year (2018, 2020) and a one time finalist (2020 Nurse of the Year for my unit).",
-            "Other awards include Nurse Preceptor of the Year (2017) and Press Ganey Care Award (2016)",
-            "Followed policies and procedures regarding patient privacy and information detailed in HIPAA.",
-            "Adapted quickly to new patient populations, hospital, policies, and procedures to provide support for staff at another (adult) hospital in the same system while they were stretched thin during the COVID-19 pandemic.",
-            "Aided in hospital logistics including moving patients, closing units, and arrangement of nursing assignments."
+            "Followed policies and procedures regarding patient privacy and information detailed in HIPAA."
         ]
     },
     {
@@ -59,10 +56,9 @@
         "current": false,
         "contributions": [
             "Updated, maintained, and developed a large production full stack application.",
-            "Implemented a quality-of-life update by adding a REST API endpoint to return information on previously added sets of data.",
-            "Gained experience working in Azure DevOps, Snowflake Data Cloud, and Azure services.",
-            "Designed and built a large scale software deployment system using client \"rings\" to streamline the update process.",
-            "Collaborated with a team of software engineers by pairing on projects, reviewing code, and working through solutions to difficult healthcare-related problems"
+            "Designed and built a large-scale software deployment system using client \"rings\" to streamline the update process.",
+            "Gained experience working in Azure DevOps, Databricks, Snowflake Data Cloud, and Azure services. ",
+            "Collaborated with a team of software engineers by pairing on projects, reviewing code, and working through software solutions."
         ]
     },
     {
