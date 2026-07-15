@@ -1,5 +1,41 @@
 [
     {
+        "id": "8",
+        "title": "May as well learn how to make SVGs",
+        "author": "JakeSaintG",
+        "publish_date": "1751769000",
+        "tags": ["Mobile", "React", "UI", "SVG"],
+        "markdown": "./assets/blogs/8_svgs.md",
+        "visible": true
+    },
+    {
+        "id": "6",
+        "title": "Let's add some \"Creature\" Comforts",
+        "author": "JakeSaintG",
+        "publish_date": "1749589200",
+        "tags": ["Mobile", "SQL"],
+        "markdown": "./assets/blogs/6_creatue_comforts.md",
+        "visible": true
+    },
+    {
+        "id": "4",
+        "title": "Scope Creep",
+        "author": "JakeSaintG",
+        "publish_date": "1747106100",
+        "tags": ["Mobile", "SQL", "React"],
+        "markdown": "./assets/blogs/4_configuration_might_be_needed.md",
+        "visible": true
+    },
+    {
+        "id": "3",
+        "title": "Back at it!",
+        "author": "JakeSaintG",
+        "publish_date": "1746137160",
+        "tags": ["Mobile"],
+        "markdown": "./assets/blogs/3_back_at_it.md",
+        "visible": true
+    },
+    {
         "id": "2",
         "title": "Pokédex App Project: Getting Started!",
         "author": "JakeSaintG",
@@ -15,42 +51,6 @@
         "publish_date": "1742095414",
         "tags": ["Mobile", "React", "Flutter", "Maui", "Swift", "Kotlin"],
         "markdown": "./assets/blogs/1_grand_ambitions.md",
-        "visible": true
-    },
-    {
-        "id": "3",
-        "title": "Back at it!",
-        "author": "JakeSaintG",
-        "publish_date": "1746137160",
-        "tags": ["Mobile"],
-        "markdown": "./assets/blogs/3_back_at_it.md",
-        "visible": true
-    },
-    {
-        "id": "4",
-        "title": "Scope Creep",
-        "author": "JakeSaintG",
-        "publish_date": "1747106100",
-        "tags": ["Mobile", "SQL", "React"],
-        "markdown": "./assets/blogs/4_configuration_might_be_needed.md",
-        "visible": true
-    },
-    {
-        "id": "6",
-        "title": "Let's add some \"Creature\" Comforts",
-        "author": "JakeSaintG",
-        "publish_date": "1749589200",
-        "tags": ["Mobile", "SQL"],
-        "markdown": "./assets/blogs/6_creatue_comforts.md",
-        "visible": true
-    },
-    {
-        "id": "8",
-        "title": "May as well learn how to make SVGs",
-        "author": "JakeSaintG",
-        "publish_date": "1751769000",
-        "tags": ["Mobile", "React", "UI", "SVG"],
-        "markdown": "./assets/blogs/8_svgs.md",
         "visible": true
     }
 ]

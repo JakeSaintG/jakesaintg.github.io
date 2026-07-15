@@ -53,7 +53,12 @@ export function BlogSection(props: Props) {
             <PageSection title="Blog" id="blogSection" style={contentStyle} visualMode={visualMode} >
                 <div className={styles.blog_header}>
                     <button className={styles[visualMode]} onClick={() => toggleIsBlogDisplayed()} aria-label="go back">
-                        <FontAwesomeIcon icon={faArrowLeftLong} size='xl' aria-hidden="true" aria-label="back"/>
+                        <FontAwesomeIcon 
+                            icon={faArrowLeftLong}
+                            size='xl'
+                            aria-hidden="true"
+                            aria-label="back"
+                        />
                     </button>
                     <h2>{displayedBlog?.title}</h2>
                     <p>{date}</p>
@@ -70,10 +75,10 @@ export function BlogSection(props: Props) {
                     <div>
                         {blogPreviews.map((b: blog) => (
                             <BlogPreview
-                            visualMode={props.visualMode}
-                            displayBlog={toggleIsBlogDisplayed}
-                            key={refKey.current++}
-                            blog={b}
+                                visualMode={props.visualMode}
+                                displayBlog={toggleIsBlogDisplayed}
+                                key={refKey.current++}
+                                blog={b}
                             ></BlogPreview>
                         ))}
                     </div>

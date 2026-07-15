@@ -1,5 +1,4 @@
-# BACK AT IT!
-(Part of the Pokedex App Project Blogging that I'm treating more like live journaling.)
+## Part of the Pokedex App Project live journaling
 
 Is this one of those rare projects that a developer gets back to? ABSOLUTELY!
 
